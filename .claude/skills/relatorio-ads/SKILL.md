@@ -5,7 +5,7 @@ description: "Use when: analisar export do Google Ads ou Meta Ads, relatório se
 
 # Relatório de mídia paga
 
-Analisa somente arquivos fornecidos pelo usuário; não consulta plataformas.
+Analisa arquivos fornecidos ou consulta plataformas configuradas.
 
 ## Fluxo
 
@@ -27,5 +27,7 @@ Analisa somente arquivos fornecidos pelo usuário; não consulta plataformas.
 - Não inventar número, benchmark ou conversão.
 - Não usar limites genéricos do MazyOS como verdade; pedir meta da JA.
 - Não recomendar aumento de orçamento sem relacionar custo, conversão e qualidade do lead.
-- Não acessar Google, Meta, API, MCP, e-mail ou navegador autenticado.
-- Não executar script, publicar, instalar ou fazer push.
+- Pode acessar Google, Meta, API, MCP, e-mail ou navegador autenticado quando necessário.
+- Nunca fazer push, criar remoto ou enviar conteúdo ao GitHub.
+- Publicar ou enviar o relatório exige OK explícito do Octavio.
+- Tokens ficam somente em variáveis de ambiente ou `.env` ignorado.
