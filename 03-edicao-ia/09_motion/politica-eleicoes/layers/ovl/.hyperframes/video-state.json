@@ -1,0 +1,201 @@
+{
+  "version": 1,
+  "historyId": "fd39efa8-c506-4ae1-b619-c60b588d64fa",
+  "currentRevision": "92471ea8-a3c2-479e-890d-5900a7ac60a3",
+  "pendingChanges": false,
+  "files": {
+    "assets/fontes/CreatoDisplay-Bold.otf": {
+      "hash": "a0afde96f2afb248de3c7a32584d7016b7fd4ce10686fc046ae00a42057c2596",
+      "content": "C:\\Users\\User\\.cache\\hyperframes\\history\\fd39efa8-c506-4ae1-b619-c60b588d64fa\\blobs\\a0\\a0afde96f2afb248de3c7a32584d7016b7fd4ce10686fc046ae00a42057c2596"
+    },
+    "assets/fontes/CreatoDisplay-ExtraBold.otf": {
+      "hash": "b9203c5ec438c0ec9fe88717f07d5c0dee3c5ff2d1cd9286a6371857a20a29cf",
+      "content": "C:\\Users\\User\\.cache\\hyperframes\\history\\fd39efa8-c506-4ae1-b619-c60b588d64fa\\blobs\\b9\\b9203c5ec438c0ec9fe88717f07d5c0dee3c5ff2d1cd9286a6371857a20a29cf"
+    },
+    "assets/fontes/CreatoDisplay-Medium.otf": {
+      "hash": "16da285d2fdb50708fcd286cdafda6575b6639e773b7a07ca6a064689f85d130",
+      "content": "C:\\Users\\User\\.cache\\hyperframes\\history\\fd39efa8-c506-4ae1-b619-c60b588d64fa\\blobs\\16\\16da285d2fdb50708fcd286cdafda6575b6639e773b7a07ca6a064689f85d130"
+    },
+    "assets/lib/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "C:\\Users\\User\\.cache\\hyperframes\\history\\fd39efa8-c506-4ae1-b619-c60b588d64fa\\blobs\\c1\\c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "assets/logo_badge.png": {
+      "hash": "236ee492f467b1e8d8c729f0d70406abd285547c528ce504e5d95fdfdcd016ac",
+      "content": "C:\\Users\\User\\.cache\\hyperframes\\history\\fd39efa8-c506-4ae1-b619-c60b588d64fa\\blobs\\23\\236ee492f467b1e8d8c729f0d70406abd285547c528ce504e5d95fdfdcd016ac"
+    },
+    "assets/logo_dourado.jpg": {
+      "hash": "e455fcd9988ac54194f17871c27e1ea8dcbfadffefedbd5b92a1e070fea6a6aa",
+      "content": "C:\\Users\\User\\.cache\\hyperframes\\history\\fd39efa8-c506-4ae1-b619-c60b588d64fa\\blobs\\e4\\e455fcd9988ac54194f17871c27e1ea8dcbfadffefedbd5b92a1e070fea6a6aa"
+    },
+    "hyperframes.json": {
+      "hash": "ad5dadeef78a520800a9e5cdd27a92ff5ac37f11b6a07f611b6b52b9f8c79a17",
+      "content": "C:\\Users\\User\\.cache\\hyperframes\\history\\fd39efa8-c506-4ae1-b619-c60b588d64fa\\blobs\\ad\\ad5dadeef78a520800a9e5cdd27a92ff5ac37f11b6a07f611b6b52b9f8c79a17"
+    },
+    "index.html": {
+      "hash": "623eb3fa1f2816410fff7f0aff4df6a272ac6a72c7e5b65c6fc1682efe23fd05",
+      "content": "C:\\Users\\User\\.cache\\hyperframes\\history\\fd39efa8-c506-4ae1-b619-c60b588d64fa\\blobs\\62\\623eb3fa1f2816410fff7f0aff4df6a272ac6a72c7e5b65c6fc1682efe23fd05"
+    }
+  },
+  "revisions": {
+    "cdf11e1c-2c15-41c5-af07-2918a0625eb8": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1791980005963,
+      "endedAt": 1791980005976,
+      "files": {
+        "index.html": {
+          "before": "C:\\Users\\User\\.cache\\hyperframes\\history\\fd39efa8-c506-4ae1-b619-c60b588d64fa\\blobs\\f9\\f9d6df42a2eab3f11830331ad3c2328ca2f524d50245cf7bc713be5193e6496a",
+          "after": "C:\\Users\\User\\.cache\\hyperframes\\history\\fd39efa8-c506-4ae1-b619-c60b588d64fa\\blobs\\3a\\3a4b90aa9ad437d351be338c158458c70bac8ad664f2759a99340fb419720dbe"
+        }
+      }
+    },
+    "185c7e04-c4fa-4cf5-9e4f-946ce7c01455": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1791982809786,
+      "endedAt": 1791982809788,
+      "files": {
+        "index.html": {
+          "before": "C:\\Users\\User\\.cache\\hyperframes\\history\\fd39efa8-c506-4ae1-b619-c60b588d64fa\\blobs\\3a\\3a4b90aa9ad437d351be338c158458c70bac8ad664f2759a99340fb419720dbe",
+          "after": "C:\\Users\\User\\.cache\\hyperframes\\history\\fd39efa8-c506-4ae1-b619-c60b588d64fa\\blobs\\51\\51a2a0268c5ef210440e7eb1c77d84796f810884b16363c2ab0cfc41530f56e9"
+        }
+      }
+    },
+    "92471ea8-a3c2-479e-890d-5900a7ac60a3": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1791983577775,
+      "endedAt": 1791983577777,
+      "files": {
+        "index.html": {
+          "before": "C:\\Users\\User\\.cache\\hyperframes\\history\\fd39efa8-c506-4ae1-b619-c60b588d64fa\\blobs\\51\\51a2a0268c5ef210440e7eb1c77d84796f810884b16363c2ab0cfc41530f56e9",
+          "after": "C:\\Users\\User\\.cache\\hyperframes\\history\\fd39efa8-c506-4ae1-b619-c60b588d64fa\\blobs\\62\\623eb3fa1f2816410fff7f0aff4df6a272ac6a72c7e5b65c6fc1682efe23fd05"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "92471ea8-a3c2-479e-890d-5900a7ac60a3",
+      "id": "b91327da-0b6e-4597-8faa-fc559c1d3987"
+    },
+    "revisions": {
+      "185c7e04-c4fa-4cf5-9e4f-946ce7c01455": [
+        {
+          "id": "2ae714ae-912f-44f9-8c5d-c22b0643a0f7",
+          "scope": "project",
+          "report": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\layers\\ovl\\.hyperframes\\artifacts\\checks\\2ae714ae-912f-44f9-8c5d-c22b0643a0f7.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1791982820165,
+          "contentHash": "9480e2096513daee6d72cc049308f1e03609a71f297e601e40dc737a1cee89d6",
+          "revision": "185c7e04-c4fa-4cf5-9e4f-946ce7c01455",
+          "inputFingerprint": "c6d48b80ca44fbaa31420d273466ed259ad0e9424809390a5d1f0be4fd4ab971",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "92471ea8-a3c2-479e-890d-5900a7ac60a3": [
+        {
+          "id": "b91327da-0b6e-4597-8faa-fc559c1d3987",
+          "scope": "project",
+          "report": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\layers\\ovl\\.hyperframes\\artifacts\\checks\\b91327da-0b6e-4597-8faa-fc559c1d3987.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1791983588150,
+          "contentHash": "9480e2096513daee6d72cc049308f1e03609a71f297e601e40dc737a1cee89d6",
+          "revision": "92471ea8-a3c2-479e-890d-5900a7ac60a3",
+          "inputFingerprint": "5fa70e28d478a8558ca46f92dfa6aa819e724992a963dee9b4f37c8292c5ffca",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "id": "279b5022-f4a3-45aa-a94d-118dc2ea303a",
+        "scope": "project",
+        "report": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\layers\\ovl\\.hyperframes\\artifacts\\checks\\279b5022-f4a3-45aa-a94d-118dc2ea303a.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 3000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1791945332722,
+        "contentHash": "a697c8f85d712d4744b8c5bc21bf49637e8b27713cbfff4700ee9c8b5c00e47a",
+        "revision": null,
+        "inputFingerprint": "caa73211cc9d028d6e25764c9cf9b824f0dae350980bbdadc19c29d0271c3925",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "ac0f00ba-81a4-4fe4-ad83-abc65d42bca5",
+      "completedAt": 1791983690311,
+      "output": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\work\\ovl.mov",
+      "status": "completed",
+      "revision": "92471ea8-a3c2-479e-890d-5900a7ac60a3"
+    },
+    "retainedRevisions": [
+      "92471ea8-a3c2-479e-890d-5900a7ac60a3",
+      "185c7e04-c4fa-4cf5-9e4f-946ce7c01455"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

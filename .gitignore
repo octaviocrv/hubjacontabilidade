@@ -1,8 +1,10 @@
 # repos de código independentes (nome atual e nome final)
 LandingPageJA/
 LinkDirecionaJA/
+JaContabilidadePericia/LandingPage/
 04-projetos/landing-page/
 04-projetos/link-direciona/
+04-projetos/landing-page-duplicada/
 
 # dependências e segredos
 node_modules/

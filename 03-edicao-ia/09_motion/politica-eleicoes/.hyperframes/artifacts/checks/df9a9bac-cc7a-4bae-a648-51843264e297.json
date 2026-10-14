@@ -1,0 +1,755 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 12,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "duplicate_media_discovery_risk",
+        "severity": "warning",
+        "message": "Detected 2 matching img entries with the same source/start/duration.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Avoid duplicated media nodes that can be discovered twice during compilation."
+      },
+      {
+        "code": "gsap_callback_dom_measurement",
+        "severity": "warning",
+        "message": "Timeline callback reaches DOM measurement (getBoundingClientRect/getTotalLength/getComputedStyle/...). The renderer seeks with suppressEvents=false, so callbacks re-fire on every seek, and a cold render worker runs them against whatever DOM state its own non-linear seek order produced. Measured geometry is seek-order-dependent, and values measured at build time (before the callback ran) are stale or zero.",
+        "selector": "onUpdate: upd",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Do all measurement and DOM setup synchronously at build time, before registering the timeline, or derive geometry from fixed composition coordinates instead of measuring."
+      },
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 597 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split coherent scenes or layers into separate .html files under compositions/, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "Track 1 has 7 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"bgplate\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#bgplate",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"bgplate\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"s02\"> is a timeline element that contains nested <div id=\"urnabig\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s02",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"s02\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"s04\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s04",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"s04\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"s05\"> is a timeline element that contains nested <svg>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s05",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"s05\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"s07\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s07",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"s07\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"s08\"> is a timeline element that contains nested <div id=\"espera\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s08",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"s08\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"s09\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s09",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"s09\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"s10\"> is a timeline element that contains nested <div id=\"marca\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s10",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"s10\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"vozprev\" is 32.18s but its slot (data-duration) is 32.48s — the slot is shortened to the media length when rendered. Set data-duration to ~32.18s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "32.483333333333334",
+          "data-width": "1080",
+          "data-height": "1920"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0
+      }
+    ]
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 10,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 9.023,
+        "selector": "#camS04",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -51.4,
+          "top": -439,
+          "right": 1158.2,
+          "bottom": 1711.4,
+          "width": 1209.6,
+          "height": 2150.4
+        },
+        "containerSelector": "#pvS04",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": -65,
+          "top": -400,
+          "right": 1145,
+          "bottom": 960,
+          "width": 1210,
+          "height": 1360
+        },
+        "overflow": {
+          "right": 13.2,
+          "top": 39,
+          "bottom": 751.4
+        },
+        "dataAttributes": {
+          "data-start": "8.15",
+          "data-duration": "4.35",
+          "data-media-start": "8.15",
+          "data-track-index": "2",
+          "data-end": "12.5",
+          "data-has-audio": "false",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -51.4,
+          "y": -439,
+          "width": 1209.6,
+          "height": 2150.4
+        },
+        "firstSeen": 9.023,
+        "lastSeen": 9.023,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          9.023
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 9.023,
+        "selector": "#pvS04",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": -65,
+          "top": -400,
+          "right": 1145,
+          "bottom": 960,
+          "width": 1210,
+          "height": 1360
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 65,
+          "right": 65,
+          "top": 400
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -65,
+          "y": -400,
+          "width": 1210,
+          "height": 1360
+        },
+        "firstSeen": 9.023,
+        "lastSeen": 9.023,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          9.023
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 19.851,
+        "selector": "#nfrows > div:nth-of-type(2) > span:nth-of-type(1)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 81.45,
+          "top": 1342.5,
+          "right": 142.56,
+          "bottom": 1373.5,
+          "width": 61.11,
+          "height": 31
+        },
+        "containerSelector": "#stamp2",
+        "text": "NCM",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 81.45,
+          "y": 1342.5,
+          "width": 61.11,
+          "height": 31
+        },
+        "firstSeen": 19.851,
+        "lastSeen": 19.851,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          19.851
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 19.851,
+        "selector": "#nfrows > div:nth-of-type(2) > span:nth-of-type(2)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 353.31,
+          "top": 1339.95,
+          "right": 499.45,
+          "bottom": 1375.95,
+          "width": 146.14,
+          "height": 36
+        },
+        "containerSelector": "#stamp2",
+        "text": "4202.12.10",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.89,
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 353.31,
+          "y": 1339.95,
+          "width": 146.14,
+          "height": 36
+        },
+        "firstSeen": 19.851,
+        "lastSeen": 19.851,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          19.851
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 19.851,
+        "selector": "#nfrows > div:nth-of-type(3) > span:nth-of-type(1)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 81.45,
+          "top": 1428.5,
+          "right": 251.08,
+          "bottom": 1459.5,
+          "width": 169.63,
+          "height": 31
+        },
+        "containerSelector": "#stamp2",
+        "text": "Alíquota ICMS",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.78,
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 81.45,
+          "y": 1428.5,
+          "width": 169.63,
+          "height": 31
+        },
+        "firstSeen": 19.851,
+        "lastSeen": 19.851,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          19.851
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 19.851,
+        "selector": "#camS07",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 0,
+          "top": -452,
+          "right": 1166.4,
+          "bottom": 1621.6,
+          "width": 1166.4,
+          "height": 2073.6
+        },
+        "containerSelector": "#pvS07",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": -65,
+          "top": -400,
+          "right": 1145,
+          "bottom": 960,
+          "width": 1210,
+          "height": 1360
+        },
+        "overflow": {
+          "right": 21.4,
+          "top": 52,
+          "bottom": 661.6
+        },
+        "dataAttributes": {
+          "data-start": "17.583333333333332",
+          "data-duration": "3.9833",
+          "data-media-start": "17.583333333333332",
+          "data-track-index": "2",
+          "data-end": "21.566633333333332",
+          "data-has-audio": "false",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": -452,
+          "width": 1166.4,
+          "height": 2073.6
+        },
+        "firstSeen": 19.851,
+        "lastSeen": 19.851,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          19.851
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 19.851,
+        "selector": "#pvS07",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": -65,
+          "top": -400,
+          "right": 1145,
+          "bottom": 960,
+          "width": 1210,
+          "height": 1360
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 65,
+          "right": 65,
+          "top": 400
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -65,
+          "y": -400,
+          "width": 1210,
+          "height": 1360
+        },
+        "firstSeen": 19.851,
+        "lastSeen": 19.851,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          19.851
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 23.46,
+        "selector": "#espera > div:nth-of-type(3)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 390,
+          "top": 534,
+          "right": 785.44,
+          "bottom": 565,
+          "width": 395.44,
+          "height": 31
+        },
+        "containerSelector": "#stamp3",
+        "text": "Aguardando… previsão: indefinida",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.81,
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 390,
+          "y": 534,
+          "width": 395.44,
+          "height": 31
+        },
+        "firstSeen": 23.46,
+        "lastSeen": 23.46,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          23.46
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 27.069,
+        "selector": "#camS09",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 0,
+          "top": -507.1,
+          "right": 1166.4,
+          "bottom": 1566.5,
+          "width": 1166.4,
+          "height": 2073.6
+        },
+        "containerSelector": "#pvS09",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": -65,
+          "top": -400,
+          "right": 1145,
+          "bottom": 960,
+          "width": 1210,
+          "height": 1360
+        },
+        "overflow": {
+          "right": 21.4,
+          "top": 107.1,
+          "bottom": 606.5
+        },
+        "dataAttributes": {
+          "data-start": "25.2",
+          "data-duration": "2.2333",
+          "data-media-start": "25.2",
+          "data-track-index": "2",
+          "data-end": "27.4333",
+          "data-has-audio": "false",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": -507.1,
+          "width": 1166.4,
+          "height": 2073.6
+        },
+        "firstSeen": 27.069,
+        "lastSeen": 27.069,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          27.069
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 27.069,
+        "selector": "#pvS09",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": -65,
+          "top": -400,
+          "right": 1145,
+          "bottom": 960,
+          "width": 1210,
+          "height": 1360
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 65,
+          "right": 65,
+          "top": 400
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -65,
+          "y": -400,
+          "width": 1210,
+          "height": 1360
+        },
+        "firstSeen": 27.069,
+        "lastSeen": 27.069,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          27.069
+        ]
+      }
+    ],
+    "duration": 32.483333333333334,
+    "samples": [
+      1.805,
+      5.414,
+      9.023,
+      12.632,
+      16.242,
+      19.851,
+      23.46,
+      27.069,
+      30.679
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 10,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.07:1; WCAG AA requires 3:1.",
+        "text": "B",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(183,180,176)",
+        "ratio": 2.07,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(96,96,96)",
+        "large": true,
+        "selector": "div > section:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(5) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 63.615997314453125,
+          "y": 1394,
+          "width": 84,
+          "height": 84
+        },
+        "time": 9.023,
+        "times": [
+          9.023
+        ]
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      1.805,
+      9.023,
+      16.242,
+      23.46,
+      30.679
+    ],
+    "checked": 23,
+    "passed": 22
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

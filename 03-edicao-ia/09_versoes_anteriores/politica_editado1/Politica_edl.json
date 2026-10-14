@@ -1,0 +1,30 @@
+{
+  "video": "Video Politica",
+  "nota": "Tempos em segundos dos MOV originais. 'in'/'out' delimitam a busca; o inicio/fim real de fala e refinado por RMS em montar_edl60.py.",
+  "cauda_final": 0.45,
+  "segmentos": [
+    {"id": "A",  "src": "IMG_2222", "in": 3.98,  "out": 9.05,  "quebra": 7.12, "fala": "E aí, Malu, dia 25 tem as eleições no segundo turno, hein? | Tá pensando em votar em quem pra presidente?", "take": "único"},
+    {"id": "B",  "src": "IMG_2223", "in": 3.36,  "out": 6.62,  "fala": "(Hum,) não sei ainda. Estou pensando em votar em...", "take": "2223 > 2224: termina em suspense e encaixa na virada"},
+    {"id": "C1", "src": "IMG_2232", "in": 6.00,  "out": 10.38, "fala": "Independente do candidato que você está pensando em votar no segundo turno dessas eleições,", "take": "2232 de 5 takes (2227/2230/2231/2232/2233): texto completo, dicção mais firme; 2233 diz 'dependente', 2230 perde 'continuar'"},
+    {"id": "C2", "src": "IMG_2232", "in": 10.50, "out": 13.66, "fala": "a sua empresa vai continuar pagando imposto da mesma maneira."},
+    {"id": "C3", "src": "IMG_2232", "in": 13.96, "out": 16.06, "fala": "A diferença está em quem se planeja."},
+    {"id": "D",  "src": "IMG_2236", "in": 1.04,  "out": 5.12,  "fala": "Sem planejamento, notas fiscais erradas, dívidas desconhecidas.", "take": "2236 > 2237 na 1a frase (ritmo mais firme)"},
+    {"id": "E",  "src": "IMG_2237", "in": 5.70,  "out": 9.44,  "fala": "Não adianta esperar política para resolver o problema do seu caixa.", "take": "2237 > 2236 na 2a frase ('problema do seu caixa' é mais concreto)"},
+    {"id": "F",  "src": "IMG_2239", "in": 2.00,  "out": 4.28,  "fala": "Quem se organizar agora não depende de quem ganhou."},
+    {"id": "G",  "src": "IMG_2239", "in": 4.58,  "out": 8.08,  "fala": "Aqui na JA Contabilidade somos especialistas em carga tributária."},
+    {"id": "H",  "src": "IMG_2239", "in": 8.34,  "out": 9.80,  "fala": "Chame a gente no link da bio."}
+  ],
+  "trechos": {
+    "A":  ["S01", "B"],
+    "Ab": ["S02", "C"],
+    "B":  ["S03", "A"],
+    "C1": ["S04", "B"],
+    "C2": ["S05", "C"],
+    "C3": ["S06", "A"],
+    "D":  ["S07", "B"],
+    "E":  ["S08", "C"],
+    "F":  ["S09", "B"],
+    "G":  ["S10", "C"],
+    "H":  ["S11", "A"]
+  }
+}

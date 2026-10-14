@@ -1,0 +1,16 @@
+  0.84 ->   1.52  Sem
+  1.52 ->   2.20  planejamento,
+  2.52 ->   2.72  notas
+  2.72 ->   3.14  fiscais
+  3.14 ->   3.56  erradas,
+  3.78 ->   4.26  dívidas
+  4.26 ->   5.24  desconhecidas.
+  5.52 ->   5.76  Não
+  5.76 ->   6.10  adianta
+  6.10 ->   6.32  esperar
+  6.32 ->   6.74  político
+  6.74 ->   7.02  para
+  7.02 ->   7.30  resolver
+  7.30 ->   7.64  o
+  7.64 ->   7.84  seu
+  7.84 ->   8.26  problema.

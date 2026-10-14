@@ -1,0 +1,1825 @@
+{
+  "ok": false,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 15,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "duplicate_media_discovery_risk",
+        "severity": "warning",
+        "message": "Detected 2 matching img entries with the same source/start/duration.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Avoid duplicated media nodes that can be discovered twice during compilation."
+      },
+      {
+        "code": "overlapping_gsap_tweens",
+        "severity": "warning",
+        "message": "GSAP tweens overlap on \"#lupa\" for x between 20.65s and 20.65s.",
+        "selector": "#lupa",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`."
+      },
+      {
+        "code": "gsap_callback_dom_measurement",
+        "severity": "warning",
+        "message": "Timeline callback reaches DOM measurement (getBoundingClientRect/getTotalLength/getComputedStyle/...). The renderer seeks with suppressEvents=false, so callbacks re-fire on every seek, and a cold render worker runs them against whatever DOM state its own non-linear seek order produced. Measured geometry is seek-order-dependent, and values measured at build time (before the callback ran) are stale or zero.",
+        "selector": "onUpdate: upd",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Do all measurement and DOM setup synchronously at build time, before registering the timeline, or derive geometry from fixed composition coordinates instead of measuring."
+      },
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 619 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split coherent scenes or layers into separate .html files under compositions/, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "Track 1 has 8 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"bgplate\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#bgplate",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"bgplate\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"s01\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s01",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"s01\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"s02\"> is a timeline element that contains nested <div id=\"urnabig\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s02",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"s02\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"s04\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s04",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"s04\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"s05\"> is a timeline element that contains nested <svg>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s05",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"s05\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"s07\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s07",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"s07\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"s08\"> is a timeline element that contains nested <div id=\"espera\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s08",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"s08\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"s09\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s09",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"s09\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"s10\"> is a timeline element that contains nested <div id=\"marca\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s10",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"s10\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"capa\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#capa",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\User\\Desktop\\JaContabilidadeEdicao\\09_motion\\politica-eleicoes\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"capa\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": false,
+    "errorCount": 6,
+    "warningCount": 1,
+    "infoCount": 22,
+    "findings": [
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 2.245,
+        "selector": "#calgrid > div:nth-of-type(1) > div:nth-of-type(39)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 270.78,
+          "top": 1510.5,
+          "right": 299.2,
+          "bottom": 1539.5,
+          "width": 28.42,
+          "height": 29
+        },
+        "containerSelector": "#stamp1",
+        "text": "28",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 270.78,
+          "y": 1510.5,
+          "width": 28.42,
+          "height": 29
+        },
+        "firstSeen": 2.245,
+        "lastSeen": 2.994,
+        "occurrences": 7,
+        "heldMs": 749.0000000000001,
+        "times": [
+          2.245,
+          2.37,
+          2.495,
+          2.62,
+          2.744,
+          2.869,
+          2.994
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 2.245,
+        "selector": "#calgrid > div:nth-of-type(1) > div:nth-of-type(40)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 328.78,
+          "top": 1510.5,
+          "right": 357.2,
+          "bottom": 1539.5,
+          "width": 28.42,
+          "height": 29
+        },
+        "containerSelector": "#stamp1",
+        "text": "29",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 328.78,
+          "y": 1510.5,
+          "width": 28.42,
+          "height": 29
+        },
+        "firstSeen": 2.245,
+        "lastSeen": 2.994,
+        "occurrences": 7,
+        "heldMs": 749.0000000000001,
+        "times": [
+          2.245,
+          2.37,
+          2.495,
+          2.62,
+          2.744,
+          2.869,
+          2.994
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 2.245,
+        "selector": "#calgrid > div:nth-of-type(1) > div:nth-of-type(41)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 386.09,
+          "top": 1510.5,
+          "right": 415.91,
+          "bottom": 1539.5,
+          "width": 29.82,
+          "height": 29
+        },
+        "containerSelector": "#stamp1",
+        "text": "30",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 386.09,
+          "y": 1510.5,
+          "width": 29.82,
+          "height": 29
+        },
+        "firstSeen": 2.245,
+        "lastSeen": 2.994,
+        "occurrences": 7,
+        "heldMs": 749.0000000000001,
+        "times": [
+          2.245,
+          2.37,
+          2.495,
+          2.62,
+          2.744,
+          2.869,
+          2.994
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 2.245,
+        "selector": "#calgrid > div:nth-of-type(1) > div:nth-of-type(42)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 447.23,
+          "top": 1510.5,
+          "right": 470.77,
+          "bottom": 1539.5,
+          "width": 23.54,
+          "height": 29
+        },
+        "containerSelector": "#stamp1",
+        "text": "31",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 447.23,
+          "y": 1510.5,
+          "width": 23.54,
+          "height": 29
+        },
+        "firstSeen": 2.245,
+        "lastSeen": 2.994,
+        "occurrences": 7,
+        "heldMs": 749.0000000000001,
+        "times": [
+          2.245,
+          2.37,
+          2.495,
+          2.62,
+          2.744,
+          2.869,
+          2.994
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 19.668,
+        "selector": "#nfrows > div:nth-of-type(2) > span:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 347.86,
+          "top": 1339.95,
+          "right": 494,
+          "bottom": 1375.95,
+          "width": 146.14,
+          "height": 36
+        },
+        "containerSelector": "#stamp2",
+        "text": "4202.12.10",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 347.86,
+          "y": 1339.95,
+          "width": 146.14,
+          "height": 36
+        },
+        "firstSeen": 19.46,
+        "lastSeen": 21.206,
+        "occurrences": 16,
+        "heldMs": 1745.9999999999986,
+        "times": [
+          19.46,
+          19.584,
+          19.668,
+          19.709,
+          19.834,
+          19.959,
+          20.083,
+          20.208,
+          20.333,
+          20.458,
+          20.582,
+          20.707,
+          20.832,
+          20.957,
+          21.081,
+          21.206
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 23.244,
+        "selector": "#espera > div:nth-of-type(3)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 390,
+          "top": 534,
+          "right": 785.44,
+          "bottom": 565,
+          "width": 395.44,
+          "height": 31
+        },
+        "containerSelector": "#stamp3",
+        "text": "Aguardando… previsão: indefinida",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 390,
+          "y": 534,
+          "width": 395.44,
+          "height": 31
+        },
+        "firstSeen": 22.828,
+        "lastSeen": 24.824,
+        "occurrences": 18,
+        "heldMs": 1996.0000000000023,
+        "times": [
+          22.828,
+          22.952,
+          23.077,
+          23.202,
+          23.244,
+          23.327,
+          23.451,
+          23.576,
+          23.701,
+          23.826,
+          23.95,
+          24.075,
+          24.2,
+          24.325,
+          24.449,
+          24.574,
+          24.699,
+          24.824
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "warning",
+        "time": 1.788,
+        "selector": "div.glow",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": -160,
+          "top": 300,
+          "right": 1240,
+          "bottom": 1700,
+          "width": 1400,
+          "height": 1400
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 160,
+          "right": 160
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -160,
+          "y": 300,
+          "width": 1400,
+          "height": 1400
+        },
+        "firstSeen": 1.788,
+        "lastSeen": 30.395,
+        "occurrences": 9,
+        "heldMs": 0,
+        "times": [
+          1.788,
+          5.364,
+          8.94,
+          12.516,
+          16.092,
+          19.668,
+          23.244,
+          26.819,
+          30.395
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 1.788,
+        "selector": "#camS01",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -246.8,
+          "top": -187.1,
+          "right": 1157.2,
+          "bottom": 2308.9,
+          "width": 1404,
+          "height": 2496
+        },
+        "containerSelector": "#pvS01",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": -65,
+          "top": -400,
+          "right": 1145,
+          "bottom": 960,
+          "width": 1210,
+          "height": 1360
+        },
+        "overflow": {
+          "left": 181.8,
+          "right": 12.2,
+          "bottom": 1348.9
+        },
+        "dataAttributes": {
+          "data-start": "0.0",
+          "data-duration": "3.0333",
+          "data-media-start": "0.0",
+          "data-track-index": "2",
+          "data-end": "3.0333",
+          "data-has-audio": "false",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -246.8,
+          "y": -187.1,
+          "width": 1404,
+          "height": 2496
+        },
+        "firstSeen": 1.788,
+        "lastSeen": 1.788,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.788
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 1.788,
+        "selector": "#s01 > div:nth-of-type(1)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": -65,
+          "top": -400,
+          "right": 1145,
+          "bottom": 960,
+          "width": 1210,
+          "height": 1360
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 65,
+          "right": 65,
+          "top": 400
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -65,
+          "y": -400,
+          "width": 1210,
+          "height": 1360
+        },
+        "firstSeen": 1.788,
+        "lastSeen": 1.788,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.788
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 1.788,
+        "selector": "#pvS01",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": -65,
+          "top": -400,
+          "right": 1145,
+          "bottom": 960,
+          "width": 1210,
+          "height": 1360
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 65,
+          "right": 65,
+          "top": 400
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -65,
+          "y": -400,
+          "width": 1210,
+          "height": 1360
+        },
+        "firstSeen": 1.788,
+        "lastSeen": 1.788,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.788
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 2.245,
+        "selector": "#calgrid > div:nth-of-type(1) > div:nth-of-type(31)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 212.38,
+          "top": 1452.5,
+          "right": 241.61,
+          "bottom": 1481.5,
+          "width": 29.23,
+          "height": 29
+        },
+        "containerSelector": "#stamp1",
+        "text": "20",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 212.38,
+          "y": 1452.5,
+          "width": 29.23,
+          "height": 29
+        },
+        "firstSeen": 2.245,
+        "lastSeen": 2.245,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          2.245
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 2.245,
+        "selector": "#calgrid > div:nth-of-type(1) > div:nth-of-type(32)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 273.52,
+          "top": 1452.5,
+          "right": 296.47,
+          "bottom": 1481.5,
+          "width": 22.95,
+          "height": 29
+        },
+        "containerSelector": "#stamp1",
+        "text": "21",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 273.52,
+          "y": 1452.5,
+          "width": 22.95,
+          "height": 29
+        },
+        "firstSeen": 2.245,
+        "lastSeen": 2.245,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          2.245
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 2.245,
+        "selector": "#calgrid > div:nth-of-type(1) > div:nth-of-type(33)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 329.09,
+          "top": 1452.5,
+          "right": 356.89,
+          "bottom": 1481.5,
+          "width": 27.8,
+          "height": 29
+        },
+        "containerSelector": "#stamp1",
+        "text": "22",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 329.09,
+          "y": 1452.5,
+          "width": 27.8,
+          "height": 29
+        },
+        "firstSeen": 2.245,
+        "lastSeen": 2.245,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          2.245
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 2.245,
+        "selector": "#calgrid > div:nth-of-type(1) > div:nth-of-type(34)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 386.81,
+          "top": 1452.5,
+          "right": 415.19,
+          "bottom": 1481.5,
+          "width": 28.38,
+          "height": 29
+        },
+        "containerSelector": "#stamp1",
+        "text": "23",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 386.81,
+          "y": 1452.5,
+          "width": 28.38,
+          "height": 29
+        },
+        "firstSeen": 2.245,
+        "lastSeen": 2.245,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          2.245
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 2.245,
+        "selector": "#calgrid > div:nth-of-type(1) > div:nth-of-type(35)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 444.61,
+          "top": 1452.5,
+          "right": 473.38,
+          "bottom": 1481.5,
+          "width": 28.77,
+          "height": 29
+        },
+        "containerSelector": "#stamp1",
+        "text": "24",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 444.61,
+          "y": 1452.5,
+          "width": 28.77,
+          "height": 29
+        },
+        "firstSeen": 2.245,
+        "lastSeen": 2.245,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          2.245
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 2.245,
+        "selector": "#calgrid > div:nth-of-type(1) > div:nth-of-type(38)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 213.98,
+          "top": 1510.5,
+          "right": 240.02,
+          "bottom": 1539.5,
+          "width": 26.04,
+          "height": 29
+        },
+        "containerSelector": "#stamp1",
+        "text": "27",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 213.98,
+          "y": 1510.5,
+          "width": 26.04,
+          "height": 29
+        },
+        "firstSeen": 2.245,
+        "lastSeen": 2.245,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          2.245
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 8.94,
+        "selector": "#camS04",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -61.5,
+          "top": -458.1,
+          "right": 1167.54,
+          "bottom": 1726.86,
+          "width": 1229.04,
+          "height": 2184.96
+        },
+        "containerSelector": "#pvS04",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": -65,
+          "top": -400,
+          "right": 1145,
+          "bottom": 960,
+          "width": 1210,
+          "height": 1360
+        },
+        "overflow": {
+          "right": 22.54,
+          "top": 58.1,
+          "bottom": 766.86
+        },
+        "dataAttributes": {
+          "data-start": "7.85",
+          "data-duration": "4.35",
+          "data-media-start": "7.85",
+          "data-track-index": "2",
+          "data-end": "12.2",
+          "data-has-audio": "false",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -61.5,
+          "y": -458.1,
+          "width": 1229.04,
+          "height": 2184.96
+        },
+        "firstSeen": 8.94,
+        "lastSeen": 8.94,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          8.94
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 8.94,
+        "selector": "#s04 > div:nth-of-type(1)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": -65,
+          "top": -400,
+          "right": 1145,
+          "bottom": 960,
+          "width": 1210,
+          "height": 1360
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 65,
+          "right": 65,
+          "top": 400
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -65,
+          "y": -400,
+          "width": 1210,
+          "height": 1360
+        },
+        "firstSeen": 8.94,
+        "lastSeen": 8.94,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          8.94
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 8.94,
+        "selector": "#pvS04",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": -65,
+          "top": -400,
+          "right": 1145,
+          "bottom": 960,
+          "width": 1210,
+          "height": 1360
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 65,
+          "right": 65,
+          "top": 400
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -65,
+          "y": -400,
+          "width": 1210,
+          "height": 1360
+        },
+        "firstSeen": 8.94,
+        "lastSeen": 8.94,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          8.94
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 19.668,
+        "selector": "#nfrows > div:nth-of-type(2) > span:nth-of-type(1)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 76,
+          "top": 1342.5,
+          "right": 137.11,
+          "bottom": 1373.5,
+          "width": 61.11,
+          "height": 31
+        },
+        "containerSelector": "#stamp2",
+        "text": "NCM",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.89,
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 76,
+          "y": 1342.5,
+          "width": 61.11,
+          "height": 31
+        },
+        "firstSeen": 19.668,
+        "lastSeen": 19.668,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          19.668
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 19.668,
+        "selector": "#nfrows > div:nth-of-type(2) > span:nth-of-type(2)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 347.86,
+          "top": 1339.95,
+          "right": 494,
+          "bottom": 1375.95,
+          "width": 146.14,
+          "height": 36
+        },
+        "containerSelector": "#stamp2",
+        "text": "4202.12.10",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.89,
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 347.86,
+          "y": 1339.95,
+          "width": 146.14,
+          "height": 36
+        },
+        "firstSeen": 19.668,
+        "lastSeen": 19.668,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          19.668
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 19.668,
+        "selector": "#nfrows > div:nth-of-type(3) > span:nth-of-type(1)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 76,
+          "top": 1428.5,
+          "right": 245.63,
+          "bottom": 1459.5,
+          "width": 169.63,
+          "height": 31
+        },
+        "containerSelector": "#stamp2",
+        "text": "Alíquota ICMS",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.7,
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 76,
+          "y": 1428.5,
+          "width": 169.63,
+          "height": 31
+        },
+        "firstSeen": 19.668,
+        "lastSeen": 19.668,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          19.668
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 19.668,
+        "selector": "#camS07",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 0,
+          "top": -452.8,
+          "right": 1166.4,
+          "bottom": 1620.8,
+          "width": 1166.4,
+          "height": 2073.6
+        },
+        "containerSelector": "#pvS07",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": -65,
+          "top": -400,
+          "right": 1145,
+          "bottom": 960,
+          "width": 1210,
+          "height": 1360
+        },
+        "overflow": {
+          "right": 21.4,
+          "top": 52.8,
+          "bottom": 660.8
+        },
+        "dataAttributes": {
+          "data-start": "17.283333333333335",
+          "data-duration": "3.9833",
+          "data-media-start": "17.283333333333335",
+          "data-track-index": "2",
+          "data-end": "21.266633333333335",
+          "data-has-audio": "false",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": -452.8,
+          "width": 1166.4,
+          "height": 2073.6
+        },
+        "firstSeen": 19.668,
+        "lastSeen": 19.668,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          19.668
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 19.668,
+        "selector": "#s07 > div:nth-of-type(1)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": -65,
+          "top": -400,
+          "right": 1145,
+          "bottom": 960,
+          "width": 1210,
+          "height": 1360
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 65,
+          "right": 65,
+          "top": 400
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -65,
+          "y": -400,
+          "width": 1210,
+          "height": 1360
+        },
+        "firstSeen": 19.668,
+        "lastSeen": 19.668,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          19.668
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 19.668,
+        "selector": "#pvS07",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": -65,
+          "top": -400,
+          "right": 1145,
+          "bottom": 960,
+          "width": 1210,
+          "height": 1360
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 65,
+          "right": 65,
+          "top": 400
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -65,
+          "y": -400,
+          "width": 1210,
+          "height": 1360
+        },
+        "firstSeen": 19.668,
+        "lastSeen": 19.668,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          19.668
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 23.244,
+        "selector": "#espera > div:nth-of-type(3)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 390,
+          "top": 534,
+          "right": 785.44,
+          "bottom": 565,
+          "width": 395.44,
+          "height": 31
+        },
+        "containerSelector": "#stamp3",
+        "text": "Aguardando… previsão: indefinida",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.81,
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 390,
+          "y": 534,
+          "width": 395.44,
+          "height": 31
+        },
+        "firstSeen": 23.244,
+        "lastSeen": 23.244,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          23.244
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 26.819,
+        "selector": "#camS09",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 0,
+          "top": -508.9,
+          "right": 1166.4,
+          "bottom": 1564.7,
+          "width": 1166.4,
+          "height": 2073.6
+        },
+        "containerSelector": "#pvS09",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": -65,
+          "top": -400,
+          "right": 1145,
+          "bottom": 960,
+          "width": 1210,
+          "height": 1360
+        },
+        "overflow": {
+          "right": 21.4,
+          "top": 108.9,
+          "bottom": 604.7
+        },
+        "dataAttributes": {
+          "data-start": "24.9",
+          "data-duration": "2.2333",
+          "data-media-start": "24.9",
+          "data-track-index": "2",
+          "data-end": "27.1333",
+          "data-has-audio": "false",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": -508.9,
+          "width": 1166.4,
+          "height": 2073.6
+        },
+        "firstSeen": 26.819,
+        "lastSeen": 26.819,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          26.819
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 26.819,
+        "selector": "#s09 > div:nth-of-type(1)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": -65,
+          "top": -400,
+          "right": 1145,
+          "bottom": 960,
+          "width": 1210,
+          "height": 1360
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 65,
+          "right": 65,
+          "top": 400
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -65,
+          "y": -400,
+          "width": 1210,
+          "height": 1360
+        },
+        "firstSeen": 26.819,
+        "lastSeen": 26.819,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          26.819
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 26.819,
+        "selector": "#pvS09",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": -65,
+          "top": -400,
+          "right": 1145,
+          "bottom": 960,
+          "width": 1210,
+          "height": 1360
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 65,
+          "right": 65,
+          "top": 400
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -65,
+          "y": -400,
+          "width": 1210,
+          "height": 1360
+        },
+        "firstSeen": 26.819,
+        "lastSeen": 26.819,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          26.819
+        ]
+      }
+    ],
+    "duration": 32.18333333333334,
+    "samples": [
+      1.788,
+      5.364,
+      8.94,
+      12.516,
+      16.092,
+      19.668,
+      23.244,
+      26.819,
+      30.395
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 29,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 11,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.97:1; WCAG AA requires 3:1.",
+        "text": "D",
+        "fg": "rgb(155,149,139)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 2.97,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(154,148,138)",
+        "large": true,
+        "selector": "div > section:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 84,
+          "y": 1226,
+          "width": 54,
+          "height": 36
+        },
+        "time": 1.788,
+        "times": [
+          1.788
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.97:1; WCAG AA requires 3:1.",
+        "text": "S",
+        "fg": "rgb(155,149,139)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 2.97,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(154,148,138)",
+        "large": true,
+        "selector": "div > section:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 142,
+          "y": 1226,
+          "width": 54,
+          "height": 36
+        },
+        "time": 1.788,
+        "times": [
+          1.788
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.97:1; WCAG AA requires 3:1.",
+        "text": "T",
+        "fg": "rgb(155,149,139)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 2.97,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(154,148,138)",
+        "large": true,
+        "selector": "div > section:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(3)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 200,
+          "y": 1226,
+          "width": 54,
+          "height": 36
+        },
+        "time": 1.788,
+        "times": [
+          1.788
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.97:1; WCAG AA requires 3:1.",
+        "text": "Q",
+        "fg": "rgb(155,149,139)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 2.97,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(154,148,138)",
+        "large": true,
+        "selector": "div > section:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(4)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 258,
+          "y": 1226,
+          "width": 54,
+          "height": 36
+        },
+        "time": 1.788,
+        "times": [
+          1.788
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.97:1; WCAG AA requires 3:1.",
+        "text": "Q",
+        "fg": "rgb(155,149,139)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 2.97,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(154,148,138)",
+        "large": true,
+        "selector": "div > section:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(5)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 316,
+          "y": 1226,
+          "width": 54,
+          "height": 36
+        },
+        "time": 1.788,
+        "times": [
+          1.788
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.97:1; WCAG AA requires 3:1.",
+        "text": "S",
+        "fg": "rgb(155,149,139)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 2.97,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(154,148,138)",
+        "large": true,
+        "selector": "div > section:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(6)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 374,
+          "y": 1226,
+          "width": 54,
+          "height": 36
+        },
+        "time": 1.788,
+        "times": [
+          1.788
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.97:1; WCAG AA requires 3:1.",
+        "text": "S",
+        "fg": "rgb(155,149,139)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 2.97,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(154,148,138)",
+        "large": true,
+        "selector": "div > section:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(7)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 432,
+          "y": 1226,
+          "width": 54,
+          "height": 36
+        },
+        "time": 1.788,
+        "times": [
+          1.788
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.97:1; WCAG AA requires 3:1.",
+        "text": "4",
+        "fg": "rgb(155,149,139)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 2.97,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(154,148,138)",
+        "large": true,
+        "selector": "div > section:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(15)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 84,
+          "y": 1324,
+          "width": 54,
+          "height": 54
+        },
+        "time": 1.788,
+        "times": [
+          1.788
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.97:1; WCAG AA requires 3:1.",
+        "text": "11",
+        "fg": "rgb(155,149,139)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 2.97,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(154,148,138)",
+        "large": true,
+        "selector": "div > section:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(22)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 84,
+          "y": 1382,
+          "width": 54,
+          "height": 54
+        },
+        "time": 1.788,
+        "times": [
+          1.788
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.97:1; WCAG AA requires 3:1.",
+        "text": "18",
+        "fg": "rgb(155,149,139)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 2.97,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(154,148,138)",
+        "large": true,
+        "selector": "div > section:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(29)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 84,
+          "y": 1440,
+          "width": 54,
+          "height": 54
+        },
+        "time": 1.788,
+        "times": [
+          1.788
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.97:1; WCAG AA requires 3:1.",
+        "text": "B",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(155,149,139)",
+        "ratio": 2.97,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(73,73,73)",
+        "large": true,
+        "selector": "div > section:nth-of-type(3) > div:nth-of-type(2) > div:nth-of-type(5) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 79.91180419921875,
+          "y": 1394,
+          "width": 84,
+          "height": 84
+        },
+        "time": 8.94,
+        "times": [
+          8.94
+        ]
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      1.788,
+      8.94,
+      16.092,
+      23.244,
+      30.395
+    ],
+    "checked": 70,
+    "passed": 59
+  },
+  "hdr": {
+    "autoPromotion": {
+      "triggeringAsset": "work/cam.mp4",
+      "output": {
+        "colorSpace": "BT.2020",
+        "codec": "HEVC Main10"
+      }
+    },
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

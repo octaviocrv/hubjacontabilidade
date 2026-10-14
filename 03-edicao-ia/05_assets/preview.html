@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JA Contabilidade — Render Preview</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#111; display:flex; justify-content:center; align-items:center; min-height:100vh; font-family:'Montserrat',sans-serif; }
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
+
+  .canvas {
+    position:relative; width:1080px; height:1920px;
+    overflow:hidden; background:#000;
+    transform-origin: center center;
+  }
+  .canvas video { width:100%; height:100%; object-fit:cover; }
+
+  /* Overlay de zoom — aplicado ao vídeo */
+  .zoom-layer {
+    position:absolute; inset:0;
+    display:flex; justify-content:center; align-items:center;
+  }
+  .zoom-layer video { width:100%; height:100%; object-fit:cover; }
+
+  /* Alerta topo */
+  .alert-banner {
+    position:absolute; top:160px; left:50%; transform:translateX(-50%);
+    background: linear-gradient(135deg, #FF4444 0%, #CC0000 100%);
+    color:#fff; font-size:46px; font-weight:900;
+    padding:18px 40px; border-radius:16px;
+    box-shadow: 0 8px 32px rgba(255,0,0,0.4);
+    white-space:nowrap; opacity:0; z-index:10;
+    letter-spacing: 1px;
+  }
+
+  /* Legendas */
+  .subtitle-container {
+    position:absolute; bottom:180px; left:0; right:0;
+    text-align:center; z-index:10; pointer-events:none;
+  }
+  .word {
+    display:inline-block; font-size:72px; font-weight:900;
+    color:#fff; text-shadow: 0 0 20px rgba(0,0,0,0.9), 0 4px 8px rgba(0,0,0,0.7);
+    margin: 0 6px; opacity:0; transform:scale(0.5) translateY(30px);
+  }
+  .word.highlight {
+    color:#FFDD00;
+    text-shadow: 0 0 25px rgba(255,221,0,0.6), 0 4px 8px rgba(0,0,0,0.8);
+  }
+  .word.danger {
+    color:#FF4444;
+    text-shadow: 0 0 25px rgba(255,68,68,0.6), 0 4px 8px rgba(0,0,0,0.8);
+  }
+  .word.story {
+    color:#00DDFF;
+    text-shadow: 0 0 25px rgba(0,221,255,0.6), 0 4px 8px rgba(0,0,0,0.8);
+  }
+
+  /* Progress bar */
+  .progress {
+    position:absolute; bottom:0; left:0; height:6px;
+    background: linear-gradient(90deg, #FFDD00, #FF4444);
+    z-index:20; width:0;
+  }
+
+  /* CTA final */
+  .cta {
+    position:absolute; bottom:300px; left:50%; transform:translateX(-50%);
+    background: linear-gradient(135deg, #FFDD00 0%, #FFaa00 100%);
+    color:#111; font-size:40px; font-weight:900;
+    padding:20px 50px; border-radius:50px;
+    opacity:0; z-index:10; white-space:nowrap;
+    box-shadow: 0 8px 32px rgba(255,221,0,0.4);
+  }
+
+  /* Scale para caber na tela */
+  @media (max-height: 1920px) {
+    .canvas { transform: scale(0.5); transform-origin: top center; }
+  }
+</style>
+</head>
+<body>
+
+<div class="canvas" id="canvas">
+  <div class="zoom-layer" id="zoomLayer">
+    <video id="vid" muted playsinline preload="auto">
+      <source src="../drive-download-20261013T153446Z-1-001/IMG_2168.MOV" type="video/quicktime">
+    </video>
+  </div>
+
+  <div class="alert-banner" id="alertBanner">🚨 1,5 MILHÃO de CNPJs em risco</div>
+
+  <div class="subtitle-container" id="subs"></div>
+
+  <div class="cta" id="cta">👉 Segue pra saber o final</div>
+
+  <div class="progress" id="progress"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script>
+// ─── DATA ───
+const WORDS = [
+  // Bloco 1: Dado impactante
+  { t:1.32, end:1.80, text:"Quase",   cls:"" },
+  { t:1.80, end:1.96, text:"um",      cls:"highlight" },
+  { t:1.96, end:2.20, text:"milhão",  cls:"highlight" },
+  { t:2.20, end:2.28, text:"e",       cls:"highlight" },
+  { t:2.28, end:2.42, text:"meio",    cls:"highlight" },
+  { t:2.42, end:2.66, text:"de",      cls:"" },
+  { t:2.66, end:3.52, text:"CNPJs",   cls:"highlight" },
+  // Bloco 2: Problema
+  { t:3.52, end:3.64, text:"vão",     cls:"" },
+  { t:3.64, end:3.94, text:"perder",  cls:"danger" },
+  { t:3.94, end:4.16, text:"o",       cls:"" },
+  { t:4.16, end:4.40, text:"Simples", cls:"danger" },
+  { t:4.40, end:4.80, text:"Nacional",cls:"danger" },
+  { t:4.80, end:4.98, text:"em",      cls:"" },
+  { t:4.98, end:5.48, text:"janeiro,",cls:"" },
+  // Bloco 3: Virada
+  { t:5.76, end:5.84, text:"e",       cls:"" },
+  { t:5.84, end:5.92, text:"a",       cls:"" },
+  { t:5.92, end:6.18, text:"empresa", cls:"" },
+  { t:6.18, end:6.42, text:"desse",   cls:"" },
+  { t:6.42, end:7.18, text:"pintor",  cls:"story" },
+  { t:7.18, end:7.38, text:"era",     cls:"" },
+  { t:7.38, end:7.62, text:"uma",     cls:"" },
+  { t:7.62, end:8.08, text:"delas.",  cls:"story" },
+];
+
+const ZOOMS = [
+  { t:2.66, dur:0.86, scale:1.08 },  // "CNPJs"
+  { t:3.64, dur:1.16, scale:1.05 },  // "perder o Simples Nacional"
+  { t:6.42, dur:0.76, scale:1.06 },  // "pintor"
+];
+
+const DURATION = 8.71;
+
+// ─── BUILD TIMELINE ───
+const vid    = document.getElementById('vid');
+const subs   = document.getElementById('subs');
+const zoom   = document.getElementById('zoomLayer');
+const alert_ = document.getElementById('alertBanner');
+const cta    = document.getElementById('cta');
+const prog   = document.getElementById('progress');
+
+const tl = gsap.timeline({ paused:true });
+
+// Alert banner — pop in at 0.3s
+tl.to(alert_, { opacity:1, scale:1, duration:0.3, ease:"back.out(1.7)" }, 0.3);
+tl.to(alert_, { scale:1.08, duration:0.15, yoyo:true, repeat:1, ease:"power2.inOut" }, 0.6);
+tl.to(alert_, { opacity:0, duration:0.3, ease:"power2.in" }, 5.0);
+
+// Word-by-word subtitles
+WORDS.forEach((w, i) => {
+  const el = document.createElement('span');
+  el.className = 'word' + (w.cls ? ' '+w.cls : '');
+  el.textContent = w.text;
+  el.id = 'w'+i;
+  subs.appendChild(el);
+
+  // Clear previous block words at block boundaries
+  const isNewBlock = (i === 0 || i === 7 || i === 14);
+  if (isNewBlock && i > 0) {
+    // fade out previous block
+    const prevStart = i === 7 ? 0 : (i === 14 ? 7 : 0);
+    for (let j = prevStart; j < i; j++) {
+      tl.to('#w'+j, { opacity:0, y:-20, duration:0.15, ease:"power2.in" }, w.t - 0.15);
+    }
+  }
+
+  // Pop in
+  const popDur = Math.min(0.12, (w.end - w.t) * 0.4);
+  tl.to(el, {
+    opacity:1, scale:1, y:0,
+    duration: popDur,
+    ease: w.cls ? "back.out(2)" : "back.out(1.4)"
+  }, w.t);
+
+  // Highlight pulse
+  if (w.cls) {
+    tl.to(el, { scale:1.15, duration:0.08, yoyo:true, repeat:1, ease:"power2.inOut" }, w.t + popDur);
+  }
+});
+
+// Fade out last block
+tl.to('.word', { opacity:0, y:-20, duration:0.2, stagger:0.02, ease:"power2.in" }, 8.1);
+
+// Zoom keyframes
+ZOOMS.forEach(z => {
+  tl.to(zoom, { scale:z.scale, duration:z.dur*0.4, ease:"power2.out" }, z.t);
+  tl.to(zoom, { scale:1, duration:z.dur*0.6, ease:"power2.inOut" }, z.t + z.dur*0.4);
+});
+
+// CTA
+tl.fromTo(cta,
+  { opacity:0, scale:0.8, y:30 },
+  { opacity:1, scale:1, y:0, duration:0.4, ease:"back.out(1.7)" },
+  8.1
+);
+tl.to(cta, { scale:1.05, duration:0.3, yoyo:true, repeat:2, ease:"power1.inOut" }, 8.3);
+
+// Progress bar
+tl.to(prog, { width:'100%', duration:DURATION, ease:"none" }, 0);
+
+// ─── SYNC ───
+vid.addEventListener('canplay', () => {
+  vid.play();
+  tl.play();
+});
+
+vid.addEventListener('timeupdate', () => {
+  // keep GSAP in sync
+  const drift = vid.currentTime - tl.time();
+  if (Math.abs(drift) > 0.1) tl.time(vid.currentTime);
+});
+
+// ─── CAPTURE MODE (for Puppeteer) ───
+window.__captureMode = false;
+window.__seekAndCapture = async function(time) {
+  window.__captureMode = true;
+  vid.pause();
+  tl.pause();
+  vid.currentTime = time;
+  await new Promise(r => vid.addEventListener('seeked', r, {once:true}));
+  tl.time(time);
+  await new Promise(r => setTimeout(r, 50));
+};
+</script>
+</body>
+</html>

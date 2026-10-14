@@ -1,0 +1,18 @@
+{
+ "_nota": "Rev2 (2026-10-14). Lido por build.py (composicao), mixar_audio.py (som) e compor_final.py (zoom/virada). Tempos no relogio NOVO, exceto shift.apos (relogio da rev1).",
+ "shift": {"apos": 7.85, "seg": 0.30, "_": "pausa de suspense: tudo que estava em t >= 7,85 s na rev1 andou +0,30 s"},
+ "legendas": {
+  "S01": {"cls": "v", "_": "camera original do Joao (camiseta preta): legenda branca do ESTILO.md (sobre video)"},
+  "S02": {"y": 1475, "_": "abaixo da urna, com folga da sombra"},
+  "S03": {"y": 735, "cls": "a", "ate": 7.95, "_": "parede acima da cabeca da Malu; some quando o zoom acelera"}
+ },
+ "suspense": {
+  "trecho": "S03", "foco": [601, 1044], "destino": [585, 1062], "zoom": 1.14,
+  "fala_fim": 7.72, "whip": 0.20, "whip_zoom": 1.8,
+  "_": "zoom progressivo ancorado no rosto (rastreio YuNet) ate a pausa; nos ultimos 0,20 s acelera (zoom-through) com motion blur"
+ },
+ "virada": {
+  "trecho": "S04", "foco": [540, 560], "zoom": 1.40, "dur": 0.45,
+  "_": "o quadro da Malu resolvida chega ainda ampliado e assenta em 1,0 (power3.out): continuidade do zoom-through"
+ }
+}

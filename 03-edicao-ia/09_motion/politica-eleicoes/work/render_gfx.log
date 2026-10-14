@@ -1,0 +1,17 @@
+[INFO] [Compiler] Embedded local font file: assets/fontes/CreatoDisplay-Medium.otf (46 KB → data URI)
+[INFO] [Compiler] Embedded local font file: assets/fontes/CreatoDisplay-Bold.otf (47 KB → data URI)
+[INFO] [Compiler] Embedded local font file: assets/fontes/CreatoDisplay-ExtraBold.otf (47 KB → data URI)
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (AMD)" renderer="ANGLE (AMD, Radeon RX550/550 Series (0x0000699F) Direct3D11 vs_5_0 ps_5_0, D3D11)")
+[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, screenshot, gl=--use-gl=angle --use-angle=d3d11, headlessShell=true, platform=win32)
+[initSession:screenshot] page.goto start (0ms)
+[initSession:screenshot] page.goto complete (613ms)
+[initSession:screenshot] GSAP proxy flush complete (628ms)
+[HyperFrames] render runtime fps {"canonicalFps":240,"source":"render-options","rawFpsSource":"render-options","rawFps":240}
+[initSession:screenshot] pollHfReady complete (832ms)
+[initSession:screenshot] pollSubCompositionTimelines complete (ready) (834ms)
+[initSession:screenshot] applyVideoMetadataHints complete (834ms)
+[initSession:screenshot] media + fonts + tailwind ready (847ms)
+[engine] fast capture falls back to screenshot capture: filter:blur detected (drawElementImage cannot reproduce it; see fast-capture-limitations.md)
+[initSession:screenshot] static-frame dedup: 1752/1756 predicted frame(s) reusable (outcome=verified, runs=27/27, screenshots=114, seeks=115, elapsedMs=7549) (8966ms)
+[static-dedup] reused 1752/7796 frame(s) (22%), est. ~124392ms saved (avg 71ms/frame)
+gfx exit 0

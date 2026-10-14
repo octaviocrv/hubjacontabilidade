@@ -1,0 +1,240 @@
+<!-- ===================== CAMADA GFX: fundo + cenas ===================== -->
+<div id="bgplate" class="clip gfx" data-layout-allow-overflow data-start="0" data-duration="{{END}}" data-track-index="0"><div class="glow"></div></div>
+
+<!-- S01 · A · camera original do Joao (rev2: sem graficos, sem animacao) -->
+
+<!-- S02 · C · urna: "Tá pensando em votar em quem pra presidente?" -->
+<section id="s02" class="clip gfx" data-trecho="S02" data-track-index="1">
+  <div id="urnabig" class="urna" style="left:90px;top:450px;width:900px;height:760px;">
+    <div id="tela" class="tela" style="left:40px;top:50px;width:500px;height:520px;">
+      <div id="telaon" class="abs" style="inset:0;">
+        <div class="abs" style="left:36px;top:36px;font-weight:700;font-size:26px;letter-spacing:.08em;color:#4a4741;">SEU VOTO PARA</div>
+        <div id="presid" class="abs" style="left:36px;top:84px;font-weight:800;font-size:56px;letter-spacing:.02em;white-space:nowrap;"></div>
+        <div class="abs" style="left:36px;top:212px;font-weight:700;font-size:30px;">Número:</div>
+        <div class="digit" style="left:36px;top:262px;"><div id="cur" class="cursor"></div></div>
+        <div class="digit" style="left:130px;top:262px;"></div>
+        <div class="abs" style="left:0;right:0;top:392px;height:3px;background:#4a4741;opacity:.5;"></div>
+        <div class="abs" style="left:36px;top:406px;font-weight:500;font-size:21px;color:#4a4741;">Aperte a tecla:</div>
+        <div class="abs" style="left:36px;top:434px;font-weight:500;font-size:21px;color:#4a4741;white-space:nowrap;"><b style="color:var(--green);font-weight:700;">VERDE</b> para CONFIRMAR</div>
+        <div class="abs" style="left:36px;top:461px;font-weight:500;font-size:21px;color:#4a4741;white-space:nowrap;"><b style="color:var(--orange);font-weight:700;">LARANJA</b> para CORRIGIR</div>
+      </div>
+      <div id="telabrilho" class="abs" style="inset:0;background:linear-gradient(180deg,rgba(255,255,255,.55),rgba(255,255,255,0) 60%);opacity:0;"></div>
+    </div>
+    <div id="keypad" class="abs" style="left:582px;top:64px;width:300px;height:340px;"></div>
+    <div class="tecla w" style="left:566px;top:432px;">BRANCO</div>
+    <div class="tecla o" style="left:668px;top:432px;">CORRIGE</div>
+    <div id="kconf" class="tecla c" style="left:770px;top:422px;">CONFIRMA</div>
+    <div class="abs" style="left:40px;top:612px;width:500px;">
+      <div style="height:10px;border-radius:5px;background:#cfc9bd;margin-bottom:14px;"></div>
+      <div style="height:10px;border-radius:5px;background:#cfc9bd;margin-bottom:14px;width:86%;"></div>
+      <div style="height:10px;border-radius:5px;background:#cfc9bd;width:72%;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- S04 · B · apuracao: "Independente do candidato..." -->
+<section id="s04" class="clip gfx" data-trecho="S04" data-track-index="1">
+  <div class="camcard" data-layout-allow-overflow></div>
+  <div id="apur" class="card" style="left:40px;top:1112px;width:1000px;height:500px;">
+    <div class="abs" style="left:40px;top:34px;display:flex;align-items:center;gap:16px;">
+      <div id="live" style="width:18px;height:18px;border-radius:9px;background:var(--red);"></div>
+      <span class="title" style="font-size:34px;">Apuração · 2º turno</span>
+    </div>
+    <div class="abs" style="right:40px;top:30px;text-align:right;">
+      <div class="kicker" style="font-size:22px;">seções apuradas</div>
+      <div id="secoes" class="tnum" style="font-weight:700;font-size:32px;margin-top:4px;">87,31%</div>
+    </div>
+    <div class="abs" style="left:40px;right:40px;top:118px;height:2px;background:var(--line);"></div>
+    <div id="rowA" class="abs" style="left:40px;right:40px;top:142px;height:110px;">
+      <div class="avatar av-a abs" style="left:0;top:12px;">A</div>
+      <div class="abs title" style="left:110px;top:10px;font-size:34px;">Candidato A</div>
+      <div class="track" style="left:110px;top:66px;width:600px;"><div id="barA" class="fill" style="background:#3d3b38;"></div></div>
+      <div id="pctA" class="abs tnum" style="right:0;top:22px;font-weight:800;font-size:54px;">0,0%</div>
+    </div>
+    <div id="rowB" class="abs" style="left:40px;right:40px;top:270px;height:110px;">
+      <div class="avatar av-b abs" style="left:0;top:12px;">B</div>
+      <div class="abs title" style="left:110px;top:10px;font-size:34px;">Candidato B</div>
+      <div class="track" style="left:110px;top:66px;width:600px;"><div id="barB" class="fill" style="background:#85807a;"></div></div>
+      <div id="pctB" class="abs tnum" style="right:0;top:22px;font-weight:800;font-size:54px;">0,0%</div>
+    </div>
+    <div id="quem" class="abs pill" style="left:40px;top:408px;height:56px;font-size:24px;background:#f1eee8;color:var(--ink);">Quem vence? <span id="qm" style="display:inline-block;color:var(--gold-d);font-weight:800;">?</span></div>
+  </div>
+</section>
+
+<!-- S05 · C · mesma carga: "a sua empresa vai continuar pagando imposto da mesma maneira" -->
+<section id="s05" class="clip gfx" data-trecho="S05" data-track-index="1">
+  <svg class="abs" style="left:0;top:0;" width="1080" height="1920">
+    <path id="conA" d="M540 486 C540 560 280 560 280 636" fill="none" stroke="#c5a55a" stroke-width="5" stroke-linecap="round"/>
+    <path id="conB" d="M540 486 C540 560 800 560 800 636" fill="none" stroke="#c5a55a" stroke-width="5" stroke-linecap="round"/>
+  </svg>
+  <div id="emp" class="card" style="left:220px;top:250px;width:640px;height:236px;">
+    <svg class="abs" style="left:40px;top:58px;" width="120" height="120" viewBox="0 0 120 120">
+      <rect x="0" y="0" width="120" height="120" rx="28" fill="#f6f0e1"/>
+      <path d="M34 92 V38 h34 v54 M68 56 h20 v36 M28 92 h66" fill="none" stroke="#8f7330" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M44 50 h14 M44 64 h14 M44 78 h14" stroke="#8f7330" stroke-width="6" stroke-linecap="round"/>
+    </svg>
+    <div class="abs title" style="left:190px;top:64px;font-size:50px;">Sua empresa</div>
+    <div class="abs kicker tnum" style="left:190px;top:134px;">CNPJ 12.345.678/0001-90</div>
+  </div>
+  <div id="colA" class="card" style="left:60px;top:640px;width:440px;height:480px;">
+    <div class="abs" style="left:36px;top:34px;display:flex;align-items:center;gap:16px;"><div class="avatar av-a" style="width:60px;height:60px;font-size:30px;">A</div><span class="title" style="font-size:32px;">Se A vencer</span></div>
+    <div class="abs kicker" style="left:36px;top:134px;">Impostos do mês</div>
+    <div class="abs big tnum" style="left:36px;top:176px;font-size:66px;">R$ <span id="vA">0</span></div>
+    <div class="abs" style="left:36px;right:36px;top:290px;" data-bars="A"></div>
+  </div>
+  <div id="colB" class="card" style="left:580px;top:640px;width:440px;height:480px;">
+    <div class="abs" style="left:36px;top:34px;display:flex;align-items:center;gap:16px;"><div class="avatar av-b" style="width:60px;height:60px;font-size:30px;">B</div><span class="title" style="font-size:32px;">Se B vencer</span></div>
+    <div class="abs kicker" style="left:36px;top:134px;">Impostos do mês</div>
+    <div class="abs big tnum" style="left:36px;top:176px;font-size:66px;">R$ <span id="vB">0</span></div>
+    <div class="abs" style="left:36px;right:36px;top:290px;" data-bars="B"></div>
+  </div>
+  <div id="igual" class="abs" style="left:476px;top:816px;width:128px;height:128px;border-radius:64px;background:var(--gold);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 10px var(--bg),0 18px 40px rgba(143,115,48,.35);">
+    <svg width="64" height="44" viewBox="0 0 64 44"><rect x="0" y="0" width="64" height="12" rx="6" fill="#fff"/><rect x="0" y="32" width="64" height="12" rx="6" fill="#fff"/></svg>
+  </div>
+  <div id="mesma" class="abs" style="left:0;right:0;top:1170px;display:flex;flex-direction:column;align-items:center;">
+    <div class="title" style="font-size:46px;">Mesma carga, seja quem for.</div>
+    <div id="mesmabar" style="width:520px;height:8px;border-radius:4px;background:var(--gold);margin-top:16px;transform-origin:0 50%;"></div>
+  </div>
+</section>
+
+<!-- S07 · B · sem planejamento: nota errada + dividas desconhecidas -->
+<section id="s07" class="clip gfx" data-trecho="S07" data-track-index="1">
+  <div class="camcard" data-layout-allow-overflow></div>
+  <div id="nf" class="card" style="left:40px;top:1112px;width:490px;height:510px;">
+    <div class="abs" style="left:36px;top:34px;display:flex;align-items:center;gap:14px;">
+      <span class="pill" style="height:46px;font-size:22px;padding:0 18px;background:#f6f0e1;color:var(--gold-d);">NF-e</span>
+      <span class="title tnum" style="font-size:32px;">Nº 000.482</span>
+    </div>
+    <div id="nfrows" class="abs" style="left:36px;right:36px;top:116px;"></div>
+  </div>
+  <div id="stamp2" class="stamp" data-layout-allow-overlap data-layout-allow-occlusion style="left:84px;top:1318px;width:400px;height:118px;font-size:62px;color:var(--red);border:8px solid var(--red);background:rgba(255,255,255,.9);">Errada</div>
+  <div id="div" class="card" style="left:550px;top:1112px;width:490px;height:510px;">
+    <div class="abs" style="left:36px;top:34px;display:flex;align-items:center;gap:14px;">
+      <svg width="46" height="42" viewBox="0 0 46 42"><path d="M23 3 L44 39 H2 Z" fill="#fbecea" stroke="#cc3d3d" stroke-width="4" stroke-linejoin="round"/><path d="M23 16 v10" stroke="#cc3d3d" stroke-width="4.5" stroke-linecap="round"/><circle cx="23" cy="32.5" r="2.8" fill="#cc3d3d"/></svg>
+      <span class="title" style="font-size:36px;">Dívidas</span>
+    </div>
+    <div class="abs kicker" style="left:36px;top:104px;">Débitos em aberto</div>
+    <div class="abs" style="left:36px;top:150px;width:418px;height:90px;overflow:hidden;">
+      <div id="dval" class="big tnum" style="font-size:70px;white-space:nowrap;">R$ 00.000</div>
+    </div>
+    <svg id="lupa" class="abs" style="left:120px;top:128px;" width="130" height="130" viewBox="0 0 130 130"><circle cx="54" cy="54" r="40" fill="rgba(255,255,255,.25)" stroke="#1a1a1a" stroke-width="9"/><path d="M84 84 L118 118" stroke="#1a1a1a" stroke-width="13" stroke-linecap="round"/></svg>
+    <div id="naoid" class="abs pill" style="left:36px;top:268px;height:52px;font-size:22px;background:var(--red-soft);color:var(--red);">Não identificadas</div>
+    <div class="abs" style="left:36px;right:36px;top:338px;">
+      <div class="row" style="height:52px;border-top:2px solid var(--line);"><span class="kicker">Federais</span><span class="title tnum q" style="font-size:30px;">?</span></div>
+      <div class="row" style="height:52px;border-top:2px solid var(--line);"><span class="kicker">Estaduais</span><span class="title tnum q" style="font-size:30px;">?</span></div>
+      <div class="row" style="height:52px;border-top:2px solid var(--line);"><span class="kicker">Municipais</span><span class="title tnum q" style="font-size:30px;">?</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- S08 · C · esperar Brasilia x seu caixa -->
+<section id="s08" class="clip gfx" data-trecho="S08" data-track-index="1">
+  <div id="espera" class="card" style="left:60px;top:250px;width:960px;height:410px;">
+    <svg class="abs" style="left:40px;top:70px;" width="250" height="180" viewBox="0 0 250 180">
+      <path id="cg1" d="M10 160 H240" fill="none" stroke="#1a1a1a" stroke-width="6" stroke-linecap="round"/>
+      <path id="cg2" d="M104 160 V20 H118 V160 M132 160 V20 H146 V160" fill="none" stroke="#1a1a1a" stroke-width="6" stroke-linejoin="round"/>
+      <path id="cg3" d="M24 132 H232 V146 H24 Z" fill="none" stroke="#1a1a1a" stroke-width="5" stroke-linejoin="round"/>
+      <path id="cg4" d="M42 132 A34 34 0 0 1 98 132" fill="none" stroke="#1a1a1a" stroke-width="6"/>
+      <path id="cg5" d="M154 104 A40 26 0 0 0 214 104" fill="none" stroke="#1a1a1a" stroke-width="6" transform="translate(0 6)"/>
+    </svg>
+    <div class="abs title" style="left:330px;top:66px;width:590px;font-size:48px;line-height:1.12;">Esperar a política resolver?</div>
+    <div class="track" style="left:330px;top:236px;width:520px;height:20px;"><div id="esp" class="fill" style="background:var(--muted);"></div></div>
+    <svg id="spin" class="abs" style="left:874px;top:228px;" width="38" height="38" viewBox="0 0 38 38"><circle cx="19" cy="19" r="15" fill="none" stroke="#e8e5df" stroke-width="5"/><path d="M19 4 A15 15 0 0 1 34 19" fill="none" stroke="#6b6762" stroke-width="5" stroke-linecap="round"/></svg>
+    <div class="abs kicker" style="left:330px;top:284px;">Aguardando… previsão: indefinida</div>
+  </div>
+  <div id="stamp3" class="stamp" data-layout-allow-overlap data-layout-allow-occlusion style="left:300px;top:540px;width:480px;height:120px;font-size:58px;color:var(--red);border:8px solid var(--red);background:rgba(255,255,255,.92);">Não adianta</div>
+  <div id="caixa" class="card" style="left:60px;top:730px;width:960px;height:560px;">
+    <div class="abs title" style="left:40px;top:40px;font-size:46px;">Seu caixa</div>
+    <div class="abs kicker" style="left:40px;top:102px;">saldo disponível</div>
+    <div id="cxv" class="abs big tnum" style="right:40px;top:40px;font-size:70px;">R$ 48.900</div>
+    <svg class="abs" style="left:40px;top:180px;" width="880" height="320" viewBox="0 0 880 320">
+      <defs><linearGradient id="gr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cc3d3d" stop-opacity=".18"/><stop offset="1" stop-color="#cc3d3d" stop-opacity="0"/></linearGradient>
+        <clipPath id="areaclip"><rect id="areaclipr" x="0" y="0" width="0" height="320"/></clipPath></defs>
+      <g stroke="#efece6" stroke-width="2"><path d="M0 40 H880 M0 120 H880 M0 200 H880 M0 280 H880"/></g>
+      <path d="M0 40 C80 38 120 60 180 70 S300 92 360 120 S470 150 520 176 S640 214 700 240 S810 270 860 284 V320 H0 Z" fill="url(#gr)" clip-path="url(#areaclip)"/>
+      <path id="cxline" d="M0 40 C80 38 120 60 180 70 S300 92 360 120 S470 150 520 176 S640 214 700 240 S810 270 860 284" fill="none" stroke="#cc3d3d" stroke-width="7" stroke-linecap="round"/>
+      <circle id="cxdot" cx="860" cy="284" r="12" fill="#cc3d3d"/>
+      <circle id="cxring" cx="860" cy="284" r="12" fill="none" stroke="#cc3d3d" stroke-width="4"/>
+    </svg>
+    <div id="cxpct" class="abs pill tnum" style="right:40px;top:132px;height:50px;font-size:24px;background:var(--red-soft);color:var(--red);">−75% no mês</div>
+  </div>
+</section>
+
+<!-- S09 · B · com planejamento: checklist + vencedor indiferente -->
+<section id="s09" class="clip gfx" data-trecho="S09" data-track-index="1">
+  <div class="camcard" data-layout-allow-overflow></div>
+  <div id="chk" class="card" style="left:40px;top:1112px;width:1000px;height:350px;">
+    <div class="abs title" style="left:40px;top:34px;font-size:36px;">Planejamento tributário</div>
+    <div id="chkrows" class="abs" style="left:40px;right:40px;top:100px;"></div>
+  </div>
+  <div id="venc" class="card" style="left:40px;top:1486px;width:430px;height:112px;border-radius:56px;">
+    <div class="abs" style="left:36px;top:0;bottom:0;display:flex;align-items:center;gap:20px;">
+      <span class="title" style="font-size:32px;font-weight:500;color:var(--muted);">Vencedor:</span>
+      <div id="flip" class="avatar av-a" style="width:72px;height:72px;font-size:36px;">A</div>
+    </div>
+  </div>
+  <div id="prep" class="abs pill" style="left:500px;top:1486px;width:540px;height:112px;border-radius:56px;justify-content:center;font-size:32px;letter-spacing:.02em;text-transform:none;background:var(--green);color:#fff;box-shadow:0 16px 40px rgba(35,135,77,.28);">
+    <svg width="40" height="40" viewBox="0 0 40 40"><path id="prepck" d="M8 21 L17 30 L33 11" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Empresa preparada
+  </div>
+</section>
+
+<!-- S10 · C · marca: JA Contabilidade, especialistas em carga tributaria -->
+<section id="s10" class="clip gfx" data-trecho="S10" data-track-index="1">
+  <div id="marca" class="abs" style="left:0;top:0;width:1080px;height:1100px;transform-origin:540px 560px;">
+    <svg class="abs" style="left:0;top:0;" width="1080" height="1100"><circle id="anel" cx="540" cy="560" r="244" fill="none" stroke="#c5a55a" stroke-width="6" stroke-linecap="round" transform="rotate(-90 540 560)"/></svg>
+    <div id="logo" class="abs" style="left:320px;top:340px;width:440px;height:440px;border-radius:220px;overflow:hidden;background:#000;">
+      <img src="assets/logo_dourado.jpg" alt="" style="width:440px;height:440px;display:block;">
+    </div>
+    <div id="nome" class="abs" style="left:0;right:0;top:850px;text-align:center;font-weight:800;font-size:58px;letter-spacing:-.01em;">JA Contabilidade <span style="font-weight:500;color:var(--gold-d);">e Perícia</span></div>
+  </div>
+  <div id="esp2" class="card" style="left:90px;top:690px;width:900px;height:580px;">
+    <div class="abs kicker" style="left:0;right:0;top:44px;text-align:center;font-size:34px;">Especialistas em</div>
+    <div class="abs big" style="left:0;right:0;top:92px;text-align:center;font-size:72px;">Carga tributária</div>
+    <svg class="abs" style="left:170px;top:214px;" width="560" height="320" viewBox="0 0 560 320">
+      <path d="M50 290 A230 230 0 0 1 510 290" fill="none" stroke="#efece6" stroke-width="36"/>
+      <path id="gz1" d="M50 290 A230 230 0 0 1 130.8 114.9" fill="none" stroke="#c5a55a" stroke-width="36"/>
+      <path id="gz2" d="M429.2 114.9 A230 230 0 0 1 510 290" fill="none" stroke="#cc3d3d" stroke-width="36"/>
+      <g id="needle"><path d="M274 290 L280 92 L286 290 Z" fill="#1a1a1a"/></g>
+      <circle cx="280" cy="290" r="22" fill="#1a1a1a"/>
+      <text x="62" y="318" font-family="Creato" font-weight="700" font-size="26" fill="#8f7330" text-anchor="middle">Planejada</text>
+      <text x="498" y="318" font-family="Creato" font-weight="700" font-size="26" fill="#cc3d3d" text-anchor="middle">Alta</text>
+    </svg>
+  </div>
+</section>
+
+<!-- ===================== CAMADA PREVIEW: camera + voz (so no index.html) ===================== -->
+{{PREVIEW}}
+
+<!-- ===================== CAMADA OVL: legendas, selo, etiquetas, CTA, capa ===================== -->
+<div id="tag04" class="seamtag pill ovl" style="background:#fff;color:var(--ink);opacity:0;">
+  <span id="tag04dot" style="width:16px;height:16px;border-radius:8px;background:var(--red);display:inline-block;"></span>Apuração ao vivo
+</div>
+<div id="tag07" class="seamtag pill ovl" style="background:var(--red);color:#fff;opacity:0;">
+  <svg width="26" height="26" viewBox="0 0 26 26"><path d="M5 5 L21 21 M21 5 L5 21" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/></svg>
+  Sem planejamento
+</div>
+<div id="tag09" class="seamtag pill ovl" style="background:var(--green);color:#fff;opacity:0;">
+  <svg width="28" height="26" viewBox="0 0 28 26"><path d="M4 14 L11 21 L24 5" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  Com planejamento
+</div>
+
+<img id="badgeA" class="badge ovl" src="assets/logo_badge.png" alt="" style="left:276px;top:1100px;width:647px;height:809px;opacity:0;">
+<img id="badgeB" class="badge ovl" src="assets/logo_badge.png" alt="" style="left:37px;top:587px;width:454px;height:567px;opacity:0;">
+
+<div id="cta" class="card ovl" style="left:120px;top:1468px;width:840px;height:144px;border-radius:72px;opacity:0;">
+  <div class="abs" style="left:22px;top:22px;width:100px;height:100px;border-radius:50px;overflow:hidden;background:#000;"><img src="assets/logo_dourado.jpg" alt="" style="width:100px;height:100px;display:block;"></div>
+  <div class="abs title" style="left:142px;top:30px;font-size:34px;">@jacontabilidade_</div>
+  <div class="abs kicker" style="left:142px;top:78px;font-size:24px;">JA Contabilidade e Perícia</div>
+  <div id="ctabtn" class="abs" style="right:24px;top:27px;width:250px;height:90px;border-radius:45px;background:var(--gold-d);color:#fff;display:flex;align-items:center;justify-content:center;gap:12px;font-weight:700;font-size:30px;">
+    Link na bio
+    <svg width="26" height="30" viewBox="0 0 26 30"><path d="M13 28 V4 M3 13 L13 3 L23 13" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div id="ripple" class="abs" style="right:99px;top:47px;width:50px;height:50px;border-radius:25px;border:4px solid var(--gold);opacity:0;"></div>
+</div>
+<svg id="hand" class="abs ovl" style="left:0;top:0;opacity:0;" width="70" height="86" viewBox="0 0 70 86">
+  <path d="M22 44 V12 a7 7 0 0 1 14 0 V38 l3-1 a7 7 0 0 1 9 6 l1 1 a7 7 0 0 1 10 5 v12 c0 13 -9 22 -22 22 h-6 c-9 0 -15 -5 -20 -13 L4 58 a7 7 0 0 1 11 -8 Z" fill="#fff" stroke="#1a1a1a" stroke-width="4" stroke-linejoin="round"/>
+</svg>
+
+<div id="legs" class="ovl"></div>
+

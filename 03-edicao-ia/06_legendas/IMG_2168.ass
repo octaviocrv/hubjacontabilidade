@@ -1,0 +1,27 @@
+[Script Info]
+Title: IMG_2168 Word-by-Word Animated
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Default,Montserrat,70,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,200,1
+Style: Highlight,Montserrat,76,&H0000DDFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,5,2,2,60,60,200,1
+Style: Danger,Montserrat,76,&H004444FF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,5,2,2,60,60,200,1
+Style: Story,Montserrat,76,&H00FFDD00,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,5,2,2,60,60,200,1
+Style: Alert,Montserrat,50,&H00FFFFFF,&H000000FF,&H004444FF,&H804444FF,-1,0,0,0,100,100,2,0,3,0,8,8,40,40,100,1
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,═══ BANNER DE ALERTA ═══
+Dialogue: 2,0:00:00.30,0:00:05.20,Alert,,0,0,0,,{\an8\fad(250,300)\t(0,200,\fscx105\fscy105)\t(200,400,\fscx100\fscy100)}🚨  1,5 MILHÃO de CNPJs em risco  🚨
+Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,═══ BLOCO 1: "Quase um milhão e meio de CNPJs" ═══
+Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,Cada frase inteira aparece, com karaoke highlight
+Dialogue: 0,0:00:01.32,0:00:03.52,Default,,0,0,0,,{\an2\fad(120,150)\t(0,120,\fscx105\fscy105)\t(120,240,\fscx100\fscy100)}{\k48}Quase {\k16}um {\k24}milhão {\k8}e {\k14}meio {\k24}de {\k86}CNPJs
+Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,═══ BLOCO 2: "vão perder o Simples Nacional em janeiro" ═══
+Dialogue: 0,0:00:03.52,0:00:05.48,Default,,0,0,0,,{\an2\fad(120,150)\t(0,120,\fscx105\fscy105)\t(120,240,\fscx100\fscy100)}{\k12}vão {\k30}perder {\k22}o {\k24}Simples {\k40}Nacional {\k18}em {\k50}janeiro,
+Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,═══ BLOCO 3: "e a empresa desse pintor era uma delas." ═══
+Dialogue: 0,0:00:05.76,0:00:08.08,Default,,0,0,0,,{\an2\fad(120,200)\t(0,120,\fscx105\fscy105)\t(120,240,\fscx100\fscy100)}{\k8}e {\k8}a {\k26}empresa {\k24}desse {\k76}pintor {\k20}era {\k24}uma {\k46}delas.
