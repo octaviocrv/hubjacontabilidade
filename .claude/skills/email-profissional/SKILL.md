@@ -27,4 +27,6 @@ Ler `00-contexto/tom-de-voz.md`, `00-contexto/marca.md` e `_memoria/preferencias
 - Sem clichês corporativos, promessa de resultado ou informação não confirmada.
 - Não inserir cargo, registro, telefone ou assinatura não comprovados.
 - Entregar rascunho no chat; salvar somente quando solicitado.
-- Nunca enviar e-mail, chamar Gmail/API, executar script, publicar ou usar Git.
+- Pode usar Gmail/API para preparar ou enviar, mas o envio exige OK explícito do Octavio para cada e-mail.
+- Nunca fazer push, criar remoto ou enviar conteúdo ao GitHub.
+- Segredos ficam somente em variáveis de ambiente ou `.env` ignorado.
