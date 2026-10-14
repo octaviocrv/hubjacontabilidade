@@ -32,5 +32,7 @@ Ler `00-contexto/tom-de-voz.md`, `00-contexto/marca.md` e `_memoria/preferencias
 - Não expor dados de cliente.
 - Não admitir responsabilidade jurídica sem orientação.
 - Não repetir respostas idênticas.
-- Não chamar Google Business, API, navegador ou script.
+- Pode usar Google Business, API, navegador ou script quando configurado, mas publicar cada resposta exige OK explícito do Octavio.
 - Salvar histórico somente se solicitado e em destino aprovado de `02-marketing/`.
+- Nunca fazer push, criar remoto ou enviar conteúdo ao GitHub.
+- Tokens ficam somente em variáveis de ambiente ou `.env` ignorado.
