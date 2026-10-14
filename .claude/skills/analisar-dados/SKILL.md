@@ -9,7 +9,7 @@ Produz análise executiva baseada somente no arquivo fornecido.
 
 ## Antes de começar
 
-1. Ler `00-contexto/marca.md`, `00-contexto/tom-de-voz.md` e `_memoria/empresa.md`.
+1. Ler todos os arquivos de `00-contexto/` e `_memoria/empresa.md`.
 2. Confirmar o que o arquivo representa e qual pergunta deve responder, se isso não estiver claro.
 3. Para dados contábeis ou de cliente, sinalizar riscos de confidencialidade antes de reproduzir identificadores.
 
