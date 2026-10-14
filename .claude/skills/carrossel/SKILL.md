@@ -37,12 +37,14 @@ Consultar os exemplos em `02-marketing/carrosseis/`. Não usar defaults visuais 
    - preto/quase preto, branco, cinzas e dourado `#C8A55C`;
    - linha dourada, foto tratada e rodapé fixo da JA;
    - logo e assinatura completos.
-7. Não exportar nem executar renderizador. Entregar a fonte para validação do Octavio.
+7. Pode renderizar com Playwright/Node depois de listar dependências e salvar tudo na raiz do hub, nunca em `04-projetos/`.
 
 ## Regras
 
-- Não gerar imagem por IA sem pedido e aprovação específicos.
-- Não usar OpenAI, Gemini, Playwright, Node, `npx` ou script.
+- Imagem por IA pode ser gerada após aprovação do conceito e da chamada externa.
 - Não criar `marketing/` paralelo.
-- Não publicar, instalar, fazer push ou alterar `04-projetos/`.
+- Alterações locais em `04-projetos/` exigem aprovação específica e não incluem comandos Git.
+- Nunca fazer push, criar remoto ou enviar conteúdo ao GitHub.
+- Publicação exige OK explícito do Octavio para cada peça.
+- Tokens ficam somente em variáveis de ambiente ou `.env` ignorado.
 - Depois de aprovada, oferecer registrar a peça em `00-contexto/carrosseis.md`.
