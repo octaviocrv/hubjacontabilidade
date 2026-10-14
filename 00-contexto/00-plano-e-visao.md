@@ -15,9 +15,11 @@ Fonte: briefing do Octavio, 2026-10-14.
 | `02-marketing/` | Carrosséis, posts, destaques e referências |
 | `03-edicao-ia/` | Pipeline completo de vídeo, do original ao render |
 | `04-projetos/` | Repositórios de código independentes, somente leitura pelo hub |
+| `_memoria/` | Síntese operacional e prioridades atuais; não substitui `00-contexto/` |
+| `.claude/skills/` | Workflows locais adaptados, sem push ou publicação automática |
 | `99-arquivo/` | Diagnósticos, itens não classificados e estruturas preservadas |
 
-Fonte: inventário do hub em 2026-10-14; `03-edicao-ia/README.md`.
+Fonte: inventário do hub em 2026-10-14; `03-edicao-ia/README.md`; integração seletiva do MazyOS aprovada em 2026-10-14.
 
 ## Relação com os projetos web
 

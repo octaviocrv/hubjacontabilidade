@@ -6,8 +6,12 @@ Hub único de contexto, identidade e marketing da JA. Antes de produzir qualquer
 - Acervo de marketing: [`02-marketing/`](02-marketing/)
 - Edição de vídeo e IA: [`03-edicao-ia/`](03-edicao-ia/)
 - Sites independentes: [`04-projetos/`](04-projetos/)
+- Memória operacional: [`_memoria/`](_memoria/)
+- Workflows locais adaptados: [`.claude/skills/`](.claude/skills/)
 - Itens não classificados: [`99-arquivo/`](99-arquivo/)
 
 As regras de trabalho estão em [`CLAUDE.md`](CLAUDE.md). Os projetos em `04-projetos/` têm Git e deploy próprios; não são versionados pelo Git deste hub.
+
+As skills foram adaptadas seletivamente do MazyOS. Este hub não inclui workflows de instalação, push ou publicação automática.
 
 Fonte: inventário do hub e briefing do Octavio, 2026-10-14.
