@@ -18,7 +18,7 @@ Perguntar, uma por vez:
 
 1. Verificar se `.claude/skills/` já cobre a tarefa.
 2. Propor no máximo cinco skills com nome, gatilho, entrada, saída, destino e riscos.
-3. Identificar dependências externas, mas não instalar nem configurar nada.
+3. Identificar dependências externas e listar o que será instalado ou configurado antes da ação.
 4. Esperar aprovação explícita.
 
 ## Criação
@@ -31,6 +31,7 @@ Perguntar, uma por vez:
 
 ## Proibições
 
-- Não criar skill de push, deploy, publicação automática ou instalação.
-- Não criar MCP, token, `.env`, remoto ou repositório.
+- Não criar skill que faça push, crie remoto ou envie conteúdo ao GitHub.
+- Skills que publiquem devem exigir OK explícito do Octavio para cada peça.
+- MCPs, dependências e `.env` podem ser configurados após explicar a mudança; tokens nunca entram no repositório.
 - Não executar a skill recém-criada como parte da criação.
