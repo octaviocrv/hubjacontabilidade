@@ -7,6 +7,8 @@ description: "Use when: analisar export do Google Ads ou Meta Ads, relatório se
 
 Analisa arquivos fornecidos ou consulta plataformas configuradas.
 
+Antes de começar, ler todos os arquivos de `00-contexto/`.
+
 ## Fluxo
 
 1. Ler contexto e meta da campanha em `_memoria/` e `02-marketing/`.
