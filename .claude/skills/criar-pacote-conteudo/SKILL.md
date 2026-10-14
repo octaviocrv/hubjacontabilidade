@@ -33,13 +33,13 @@ Adaptação segura da skill `publicar-tema` do MazyOS. O nome foi alterado porqu
    - `legenda-instagram-facebook.md`;
    - `texto-linkedin.md`, se pedido;
    - `fontes.md`.
-7. Se o usuário pedir arte, seguir a skill `/carrossel`; não executar render.
+7. Se o usuário pedir arte, seguir a skill `/carrossel` e renderizar quando aprovado.
 
 ## Regras
 
-- Não escrever dentro de `04-projetos/`.
-- Não alterar frontmatter de blog, copiar assets para site ou aguardar deploy.
-- Não publicar em site, Instagram, Facebook ou LinkedIn.
-- Não chamar `/aprovar-post`, API, script, Node, Playwright ou MCP.
-- Não instalar, fazer push ou criar remoto.
+- Pode preparar artigo e assets em `04-projetos/landing-page/` após aprovação específica, sem executar Git nesse repo.
+- Pode usar `/aprovar-post`, API, script, Node, Playwright ou MCP quando configurado.
+- Publicar em site ou rede social exige OK explícito do Octavio para cada pacote.
+- Nunca fazer push, criar remoto ou enviar conteúdo ao GitHub.
+- Tokens ficam somente em variáveis de ambiente ou `.env` ignorado.
 - Todo dado contábil/tributário precisa de fonte e data.
