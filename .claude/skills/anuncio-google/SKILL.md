@@ -5,7 +5,7 @@ description: "Use when: estruturar campanha Search, anúncios Google, palavras-c
 
 # Rascunho de campanha Google Ads
 
-Gera planejamento e CSVs para revisão manual. Nunca importa, ativa ou publica campanha.
+Gera planejamento e CSVs para revisão. Pode importar ou ativar somente após OK explícito do Octavio para a campanha.
 
 ## Dependências
 
@@ -44,8 +44,8 @@ Mostrar termos de pesquisa e pedir aprovação antes de WebSearch. Não inventar
 
 ## Regras
 
-- Não importar no Google Ads Editor.
-- Não acessar conta, painel, API, MCP ou Google Tag Manager.
-- Não executar script ou comando externo.
-- Não publicar, instalar, fazer push ou editar `04-projetos/`.
+- Pode acessar conta, painel, API, MCP, Google Ads Editor ou Tag Manager quando configurados.
+- Antes de importar ou ativar, mostrar resumo final e pedir OK explícito.
+- Nunca fazer push, criar remoto ou enviar conteúdo ao GitHub.
+- Tokens ficam somente em variáveis de ambiente ou `.env` ignorado.
 - Não usar superlativo ou economia garantida sem prova.
