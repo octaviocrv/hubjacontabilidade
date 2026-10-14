@@ -15,3 +15,15 @@ As regras de trabalho estão em [`CLAUDE.md`](CLAUDE.md). Os projetos em `04-pro
 As skills foram adaptadas seletivamente do MazyOS. Este hub não inclui workflows de instalação, push ou publicação automática.
 
 Fonte: inventário do hub e briefing do Octavio, 2026-10-14.
+
+## MazyOS ampliado
+
+O MazyOS complementa o hub com memória, skills e referências operacionais. A integração pode usar dependências locais, Playwright, Node, pesquisa web e APIs externas, mas:
+
+- nunca faz push nem cria ou altera remotos;
+- nunca executa Git dentro de `04-projetos/`;
+- pede aprovação explícita antes de publicar cada peça;
+- mantém segredos somente em variáveis de ambiente ou `.env` ignorado;
+- sempre lê `00-contexto/` e segue a identidade da JA.
+
+Fonte: política MazyOS vigente em `CLAUDE.md`, 2026-10-14.

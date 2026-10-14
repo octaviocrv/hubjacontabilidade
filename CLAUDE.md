@@ -48,3 +48,19 @@ Antes de usar uma skill em `.claude/skills/`:
 As skills `/instalar`, `/salvar` e `/aprovar-post` não fazem parte deste hub por serem incompatíveis com as regras acima.
 
 Fonte: integração seletiva do MazyOS aprovada pelo Octavio em 2026-10-14.
+
+## Política MazyOS vigente — 2026-10-14
+
+Esta seção substitui, quando houver conflito, as restrições anteriores sobre instalação, scripts, APIs, publicação e alterações locais:
+
+1. A única proibição absoluta é enviar conteúdo ao GitHub: nunca executar `git push`, criar ou trocar remotos, usar `gh repo create` ou qualquer comando equivalente.
+2. Commits locais no Git do hub são permitidos. Nunca executar comandos Git dentro de `04-projetos/`.
+3. Dependências podem ser instaladas somente na raiz do hub e apenas depois de listar claramente o que será instalado. Nunca instalar dentro de `04-projetos/`.
+4. Playwright, Node, scripts locais, WebSearch, WebFetch e APIs externas podem ser usados quando necessários à tarefa.
+5. Toda publicação em site, Instagram, Facebook ou outra plataforma exige o OK explícito do Octavio para cada peça.
+6. Tokens e chaves ficam apenas em variáveis de ambiente ou arquivos `.env` ignorados pelo Git. Nunca registrar segredo no repositório.
+7. Antes de executar qualquer skill adaptada, ler todos os arquivos de `00-contexto/`.
+8. O visual genérico do MazyOS continua descartado. A identidade e o design system da JA sempre prevalecem.
+9. Não criar `dados/`, `saidas/`, `scripts/`, `identidade/`, `marketing/` ou `site/` genéricos na raiz; usar os destinos numerados existentes.
+
+Fonte: mudança de regra aprovada pelo Octavio em 2026-10-14.
