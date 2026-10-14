@@ -9,17 +9,18 @@ Compara documentação e memória com o estado real do hub.
 
 ## Fluxo
 
-1. Ler `CLAUDE.md`, todos os arquivos de `00-contexto/` e `_memoria/`.
-2. Listar os caminhos relevantes do hub. Ler `04-projetos/` quando necessário para reconciliar fontes de verdade.
-3. Comparar:
+1. Ler `CLAUDE.md` e `_memoria/`.
+2. Ler todos os arquivos de `00-contexto/`.
+3. Listar os caminhos relevantes do hub. Ler `04-projetos/` quando necessário para reconciliar fontes de verdade.
+4. Comparar:
    - mapa de pastas;
    - serviços, público e posicionamento;
    - identidade e referências aprovadas;
    - prioridades e lacunas `[PREENCHER]`;
    - skills locais disponíveis.
-4. Apresentar uma lista numerada de divergências com evidência e mudança proposta.
-5. Esperar aprovação explícita antes de editar.
-6. Aplicar somente os itens aprovados, preservando citações e mostrando o resumo das alterações.
+5. Apresentar uma lista numerada de divergências com evidência e mudança proposta.
+6. Esperar aprovação explícita antes de editar.
+7. Aplicar somente os itens aprovados, preservando citações e mostrando o resumo das alterações.
 
 ## Regras
 
