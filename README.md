@@ -27,3 +27,9 @@ O MazyOS complementa o hub com memória, skills e referências operacionais. A i
 - sempre lê `00-contexto/` e segue a identidade da JA.
 
 Fonte: política MazyOS vigente em `CLAUDE.md`, 2026-10-14.
+
+Referências operacionais:
+
+- [`00-contexto/operacao-mazyos.md`](00-contexto/operacao-mazyos.md): mapeamento de dados, scripts, templates, saídas e publicação.
+- [`00-contexto/referencias/mazyos/catalogo-skills.md`](00-contexto/referencias/mazyos/catalogo-skills.md): skills disponíveis.
+- [`00-contexto/referencias/mazyos/catalogo-ferramentas.md`](00-contexto/referencias/mazyos/catalogo-ferramentas.md): ferramentas e integrações permitidas.
