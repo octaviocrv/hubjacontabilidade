@@ -10,7 +10,7 @@ Compara documentação e memória com o estado real do hub.
 ## Fluxo
 
 1. Ler `CLAUDE.md`, `00-contexto/` e `_memoria/`.
-2. Listar apenas caminhos do hub; ignorar conteúdo interno de `04-projetos/`, salvo leitura explicitamente solicitada.
+2. Listar os caminhos relevantes do hub. Ler `04-projetos/` quando necessário para reconciliar fontes de verdade.
 3. Comparar:
    - mapa de pastas;
    - serviços, público e posicionamento;
@@ -25,5 +25,8 @@ Compara documentação e memória com o estado real do hub.
 
 - Nunca preencher lacuna por inferência.
 - Nunca apagar informação; marcar obsolescência ou substituir apenas com aprovação.
-- Nunca alterar `04-projetos/`, executar scripts, instalar, publicar ou fazer push.
 - Não reformatar arquivos inteiros para mudar uma linha.
+- Alterações locais em `04-projetos/` exigem aprovação e seguem o Git próprio de cada projeto; esta skill não executa Git neles.
+- Nunca fazer push, criar remoto ou enviar conteúdo ao GitHub.
+- Publicação exige OK explícito do Octavio para cada peça.
+- Segredos ficam somente em variáveis de ambiente ou `.env` ignorado.
