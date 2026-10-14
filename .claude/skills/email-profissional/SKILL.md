@@ -7,7 +7,7 @@ description: "Use when: escrever ou responder e-mail profissional, cobrança, pr
 
 ## Contexto
 
-Ler `00-contexto/tom-de-voz.md`, `00-contexto/marca.md` e `_memoria/preferencias.md`.
+Ler todos os arquivos de `00-contexto/` e `_memoria/preferencias.md`.
 
 ## Fluxo
 
