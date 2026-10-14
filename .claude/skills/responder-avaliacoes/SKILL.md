@@ -9,7 +9,7 @@ Gera rascunhos; nunca publica.
 
 ## Contexto
 
-Ler `00-contexto/tom-de-voz.md`, `00-contexto/marca.md` e `_memoria/preferencias.md`.
+Ler todos os arquivos de `00-contexto/` e `_memoria/preferencias.md`.
 
 ## Fluxo
 
