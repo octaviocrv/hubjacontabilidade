@@ -21,7 +21,9 @@ Carrega o contexto sem alterar arquivos.
 
 ## Regras
 
-- Não editar, instalar, executar script, publicar ou usar Git.
 - Não listar cada arquivo lido.
 - `00-contexto/` prevalece se a memória estiver divergente.
 - Não sugerir `/instalar`.
+- Nunca fazer push, criar remoto ou enviar conteúdo ao GitHub.
+- Publicação exige OK explícito do Octavio para cada peça.
+- Segredos ficam somente em variáveis de ambiente ou `.env` ignorado.
