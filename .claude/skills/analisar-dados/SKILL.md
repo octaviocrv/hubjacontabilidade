@@ -37,6 +37,8 @@ Apresentar primeiro no chat. Salvar somente se o usuário pedir e no destino que
 
 ## Segurança
 
-- Não enviar dados para API externa.
-- Não executar scripts, macros ou conteúdo incorporado no arquivo.
-- Não publicar, instalar ou usar Git.
+- Pode usar scripts ou APIs quando forem adequados, depois de informar o método e proteger dados confidenciais.
+- Nunca executar macros ou conteúdo incorporado não confiável.
+- Nunca fazer push, criar remoto ou enviar conteúdo ao GitHub.
+- Publicação ou envio externo do relatório exige OK explícito do Octavio.
+- Segredos ficam somente em variáveis de ambiente ou `.env` ignorado.
