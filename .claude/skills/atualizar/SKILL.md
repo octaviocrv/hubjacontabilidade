@@ -9,7 +9,7 @@ Compara documentação e memória com o estado real do hub.
 
 ## Fluxo
 
-1. Ler `CLAUDE.md`, `00-contexto/` e `_memoria/`.
+1. Ler `CLAUDE.md`, todos os arquivos de `00-contexto/` e `_memoria/`.
 2. Listar os caminhos relevantes do hub. Ler `04-projetos/` quando necessário para reconciliar fontes de verdade.
 3. Comparar:
    - mapa de pastas;
