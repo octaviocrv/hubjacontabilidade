@@ -7,6 +7,8 @@ description: "Use when: criar iniciativa interna, campanha, projeto de marketing
 
 Cria estrutura local sem repositório e sem fugir das pastas numeradas.
 
+Antes de começar, ler todos os arquivos de `00-contexto/` e `_memoria/`.
+
 ## Fluxo
 
 1. Coletar nome, objetivo, tipo de entrega e referências existentes.
