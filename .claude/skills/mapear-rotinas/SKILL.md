@@ -5,6 +5,8 @@ description: "Use when: mapear tarefas repetitivas, propor automações locais, 
 
 # Mapear rotinas da JA
 
+Antes de começar, ler todos os arquivos de `00-contexto/` e `_memoria/`.
+
 ## Descoberta
 
 Perguntar, uma por vez:
