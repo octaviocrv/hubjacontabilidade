@@ -9,6 +9,7 @@ Gera planejamento e CSVs para revisão. Pode importar ou ativar somente após OK
 
 ## Dependências
 
+- Ler todos os arquivos de `00-contexto/` antes de começar.
 - `00-contexto/marca.md`
 - `00-contexto/tom-de-voz.md`
 - `_memoria/empresa.md`
