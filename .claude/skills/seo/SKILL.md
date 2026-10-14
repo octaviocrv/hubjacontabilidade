@@ -31,12 +31,13 @@ Pode executar um ou mais módulos:
 3. Pedir aprovação antes de qualquer WebSearch/WebFetch.
 4. Citar URL, data de acesso e separar evidência de estimativa.
 5. Salvar somente após aprovação em `02-marketing/seo/`, com arquivo numerado por módulo.
-6. Para alterações no site, produzir checklist ou patch proposto fora de `04-projetos/`; não editar o repo.
+6. Para alterações no site, mostrar o patch proposto e editar `04-projetos/landing-page/` somente após aprovação específica, sem executar Git no repo.
 
 ## Regras
 
 - Não inventar volume, CPC, posição ou concorrente.
-- Não acessar painel, Search Console, Google Ads ou Perfil da Empresa.
-- Não chamar API, MCP ou script.
-- Não instalar, publicar, fazer push ou editar `04-projetos/`.
+- Pode acessar painel, Search Console, Ads, Perfil da Empresa, API, MCP ou script quando houver credenciais e finalidade aprovada.
+- Nunca fazer push, criar remoto ou enviar conteúdo ao GitHub.
+- Publicação exige OK explícito do Octavio para cada alteração.
+- Tokens ficam somente em variáveis de ambiente ou `.env` ignorado.
 - Dados tributários usados em conteúdo devem ter fonte oficial e data.
