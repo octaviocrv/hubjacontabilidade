@@ -1,0 +1,17 @@
+# repos de código independentes (nome atual e nome final)
+LandingPageJA/
+LinkDirecionaJA/
+04-projetos/landing-page/
+04-projetos/link-direciona/
+
+# dependências e segredos
+node_modules/
+.env
+.env.*
+
+# mídia pesada (backup separado, ex: Drive)
+*.mp4
+*.mov
+*.psd
+*.prproj
+*.aep
