@@ -80,6 +80,17 @@ Fontes: `02-marketing/carrosseis/ibs-e-cbs/Carrossel IBS e CBS.dc.html`, bloco �
 
 Quantidade e conjunto oficial de hashtags: **[PREENCHER]**.
 
+## Biblioteca de estilos e carrosséis de notícia
+
+- Carrosséis de notícia podem variar composição, fundo, imagens e número de slides (5–7). Cores, fontes, logo, assinatura e tom da JA continuam fixos.
+- Nunca usar o mesmo estilo em dois posts seguidos. O controle fica em `02-marketing/carrosseis/modeloscarroseis/registro-de-uso.md`.
+- Estilos aprovados e em teste: `02-marketing/carrosseis/modeloscarroseis/estilos/`. As referências externas (Modelo 2–5 e Storytelling) servem só para composição e narrativa, nunca para cor ou texto.
+- Fundo claro só como elemento (cartão-papel, faixa) dentro de slide escuro.
+- Temas de notícia são abertos (tributário, trabalhista/eSocial, societário/MEI/Simples, gestão, perícia, tecnologia/IA, golpes, prazos, tendências) e devem variar entre posts.
+- Workflow: skill `/carrossel-noticia`.
+
+Fonte: decisão do Octavio, 2026-10-14; `02-marketing/carrosseis/modeloscarroseis/README.md`.
+
 ## Referências
 
 - `02-marketing/carrosseis/ibs-e-cbs/exports/slide-01.png`

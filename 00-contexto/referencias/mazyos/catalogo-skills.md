@@ -17,6 +17,7 @@
 ## Conteúdo e reputação
 
 - `/carrossel`: cria carrossel no padrão visual da JA.
+- `/carrossel-noticia`: pesquisa notícia contábil quente, monta roteiro de storytelling para aprovação e gera carrossel com estilo da biblioteca, sem repetir o último.
 - `/criar-pacote-conteudo`: produz pacote local sem iniciar publicação.
 - `/publicar-tema`: produz o pacote e pode encaminhar para aprovação/publicação.
 - `/aprovar-post`: prepara e publica somente após OK explícito por peça e canal.
