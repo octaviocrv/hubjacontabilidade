@@ -7,6 +7,10 @@ description: "Use when: criar carrossel a partir de notícia quente contábil/tr
 
 Transforma a notícia contábil/tributária mais relevante da semana em roteiro de storytelling e, após aprovação, em carrossel com estilo da biblioteca da JA.
 
+## REGRA INVIOLÁVEL: aprovação do roteiro
+
+Depois de escrever o roteiro/texto dos slides, **PARAR e esperar a aprovação explícita do Octavio**. Proibido, em qualquer circunstância (inclusive modo autônomo, ausência dele ou "continue trabalhando"): gerar HTML, imagens ou PNGs, baixar fotos ou registrar o post como feito antes dessa aprovação. Silêncio não é aprovação. Se o Octavio pedir mudanças, ajustar o roteiro e pedir aprovação de novo. Só salvar o `roteiro.md`.
+
 ## Fontes obrigatórias
 
 1. Todos os arquivos de `00-contexto/` e `_memoria/`.
@@ -25,6 +29,9 @@ Transforma a notícia contábil/tributária mais relevante da semana em roteiro 
    - perícia contábil e judicial;
    - tecnologia, IA e automação na contabilidade;
    - golpes e fraudes fiscais, prazos e obrigações, tendências do mercado.
+   **Radar internacional:** olhar também a seção de economia/negócios da BBC (bbc.com/portuguese e bbc.com/news/business), além de Reuters, Agência Brasil e similares, procurando curiosidades ou tendências do mundo ligadas a contabilidade, impostos, trabalho, fraudes, IA e pequenas empresas. Não precisa ter ligação direta com o Brasil: uma curiosidade internacional interessante pode virar post sozinha, desde que seja relevante e atrativa para o público da JA. Quando fizer sentido, comentar o que isso significa para o empresário brasileiro, sem forçar. Parafrasear e citar link e data da matéria no último slide.
+   **Playwright:** usar sempre que possível e sempre que precisar validar algo (página renderizada, tabela, aviso oficial, número, data). Se não estiver disponível, usar Chrome headless.
+   **Prints e dados como material do carrossel:** quando um print do site, um gráfico ou um dado visual for interessante e combinar com o layout, **trazê-lo para o slide** (recortado, tratado nas cores da JA quando fizer sentido, com crédito da fonte). Só capturar e trazer se for realmente usado na renderização final; não acumular prints sem uso. Salvar o material usado na pasta do tema. Para prints de terceiros (BBC, portais), manter recorte curto, crédito visível e link; preferir dado ou gráfico a matéria inteira.
    Fontes possíveis: gov.br (Receita, Fazenda, MTE, MEMP, PGFN), Diário Oficial, tribunais (STF, STJ, TST, TRTs), CFC/CRCs, Agência Brasil/Agência Gov, portais contábeis (Contábeis, IOB), imprensa econômica e estudos (Serasa, Sebrae, IBGE). Anotar URL e data de acesso. Os temas citados aqui são exemplos, não uma lista fechada.
 2. **Escolher** a mais útil e interessante para o público da JA (`00-contexto/marca.md`), de preferência ligada a um serviço comprovado e com recorte local (Minas Gerais/Contagem) quando houver. **Variar a área**: consultar "Temas já usados" em `registro-de-uso.md` e não repetir a área do post anterior. Listar as candidatas descartadas com o motivo.
 3. **Conferir na fonte primária** todos os números, prazos, alíquotas e status (anunciado, proposto, aprovado, em vigor). O que não for confirmado fica marcado e fora dos slides, ou entra com ressalva.

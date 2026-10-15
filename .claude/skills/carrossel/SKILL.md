@@ -7,6 +7,10 @@ description: "Use when: criar carrossel, post educativo, conteúdo para Instagra
 
 Cria rascunho e arquivos-fonte seguindo exclusivamente o padrão já aprovado da JA.
 
+## REGRA INVIOLÁVEL: aprovação do roteiro
+
+Depois de escrever o roteiro/texto dos slides, **PARAR e esperar a aprovação explícita do Octavio**. Proibido, em qualquer circunstância (inclusive modo autônomo, ausência dele ou "continue trabalhando"): gerar HTML, imagens ou PNGs, baixar fotos ou registrar o post como feito antes dessa aprovação. Silêncio não é aprovação. Se o Octavio pedir mudanças, ajustar o roteiro e pedir aprovação de novo. Só salvar o `roteiro.md`.
+
 ## Fontes obrigatórias
 
 Ler todos os arquivos de `00-contexto/`, com atenção a:

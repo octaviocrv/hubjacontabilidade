@@ -64,3 +64,9 @@ Esta seção substitui, quando houver conflito, as restrições anteriores sobre
 9. Não criar `dados/`, `saidas/`, `scripts/`, `identidade/`, `marketing/` ou `site/` genéricos na raiz; usar os destinos numerados existentes.
 
 Fonte: mudança de regra aprovada pelo Octavio em 2026-10-14.
+
+## Aprovação do roteiro de carrossel (regra estrita)
+
+Nenhum carrossel passa do roteiro para HTML/imagens/PNG sem aprovação explícita do Octavio, em nenhuma circunstância. Mostrar o roteiro, parar e esperar. Silêncio não é aprovação.
+
+Fonte: decisão do Octavio, 14/10/2026.
