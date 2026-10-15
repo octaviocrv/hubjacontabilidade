@@ -41,9 +41,9 @@ Fontes: `02-marketing/carrosseis/ibs-e-cbs/Carrossel IBS e CBS.dc.html`, slide 3
 
 ## Tipografia e cores
 
-- Título: DM Serif Display 400, branco; 30–34 px na capa, 24–26 px no desenvolvimento.
-- Corpo: DM Sans 400, `#CCCCCC` ou `#BBBBBB`, 12–13 px, line-height 1.5–1.65.
-- Kicker: DM Sans 600, 11 px, dourado `#C8A55C`, tracking de 2 px.
+- Título: Montserrat 400, branco; 30–34 px na capa, 24–26 px no desenvolvimento.
+- Corpo: Inter 400, `#CCCCCC` ou `#BBBBBB`, 12–13 px, line-height 1.5–1.65.
+- Kicker: Inter 600, 11 px, dourado `#C8A55C`, tracking de 2 px.
 - Fundo: `#0A0A0A`; dourado secundário `#A8894A`; divisórias `#1E1E1E`/`#222222`.
 
 Fontes: `02-marketing/carrosseis/ibs-e-cbs/design-system/tokens.css`; `02-marketing/carrosseis/ibs-e-cbs/design-system/README.md`.
@@ -103,7 +103,7 @@ Fonte: decisão do Octavio, 2026-10-14; `02-marketing/carrosseis/modeloscarrosei
 
 - [ ] Formato 1080×1350 e PNG.
 - [ ] Fundo escuro, dourado oficial e contraste legível no celular.
-- [ ] DM Serif Display em títulos e DM Sans no restante.
+- [ ] Montserrat em títulos e Inter no restante.
 - [ ] Capa com gancho; desenvolvimento claro; fechamento com CTA.
 - [ ] Logo sem distorção e assinatura em duas linhas.
 - [ ] Nenhum texto colide com rodapé ou área segura.

@@ -29,8 +29,8 @@ Itens obrigatorios em todos os carrosseis:
 
 ## 4. Tipografia e tamanho
 
-- Titulos: DM Serif Display
-- Texto de apoio e corpo: DM Sans
+- Titulos: Montserrat
+- Texto de apoio e corpo: Inter
 
 Escala sugerida:
 - Titulo principal: 30px a 34px

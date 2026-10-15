@@ -12,6 +12,7 @@ Transforma a notícia contábil/tributária mais relevante da semana em roteiro 
 1. Todos os arquivos de `00-contexto/` e `_memoria/`.
 2. `02-marketing/carrosseis/modeloscarroseis/README.md`: biblioteca, identidade fixa e o que aproveitar de cada referência.
 3. `02-marketing/carrosseis/modeloscarroseis/registro-de-uso.md`: último estilo usado.
+   **Antes de qualquer carrossel, listar a pasta `modeloscarroseis/` inteira**: o Octavio adiciona modelos novos ao longo do tempo. Abrir os novos, analisar e incluir como opção.
 4. `02-marketing/carrosseis/modeloscarroseis/estilos/*.md`.
 
 ## Fluxo
@@ -28,7 +29,7 @@ Transforma a notícia contábil/tributária mais relevante da semana em roteiro 
 2. **Escolher** a mais útil e interessante para o público da JA (`00-contexto/marca.md`), de preferência ligada a um serviço comprovado e com recorte local (Minas Gerais/Contagem) quando houver. **Variar a área**: consultar "Temas já usados" em `registro-de-uso.md` e não repetir a área do post anterior. Listar as candidatas descartadas com o motivo.
 3. **Conferir na fonte primária** todos os números, prazos, alíquotas e status (anunciado, proposto, aprovado, em vigor). O que não for confirmado fica marcado e fora dos slides, ou entra com ressalva.
 4. **Roteiro em storytelling:** gancho forte → contexto → prova/dado → comparação ou tensão → payoff → CTA. Último slide com fontes e data.
-5. **Escolher ou criar o estilo:** nunca o mesmo da última linha do registro. Usar a tabela "Tipo de notícia → estilo sugerido". Se criar um estilo novo, salvar `estilos/estilo-NN-nome.md` e atualizar o README da biblioteca.
+5. **Escolher ou criar o estilo:** nunca o mesmo da última linha do registro. Todos os modelos e estilos da biblioteca são válidos: consultar `00-contexto/design-system.md` (seção "Biblioteca de modelos") e misturar elementos de vários (capa de um, miolo de outro, fechamento de outro) para sempre gerar algo novo, mantendo cores, fontes e rodapé da JA. Variar os eixos listados em "Eixos de variação" no design-system (fontes: Inter, Poppins, Creato Display e Montserrat, variando mais os pesos que a família), diferindo do último post em pelo menos três eixos. Usar a tabela "Tipo de notícia → estilo sugerido". Se criar um estilo novo, salvar `estilos/estilo-NN-nome.md` e atualizar o README da biblioteca.
 6. **Salvar o roteiro** em `02-marketing/carrosseis/<tema>/roteiro.md` com tabela de conferência de dados e fontes.
 7. **PARAR** e mostrar: "Olha, esse é o script". Só seguir após aprovação explícita do Octavio.
 8. **Montar** o HTML `Carrossel <Tema>.dc.html` na pasta do tema, copiando a estrutura de exportação dos carrosséis existentes (`?exportSlide=N`), com `Logo.jpeg` e fotos na mesma pasta.

@@ -23,13 +23,13 @@ Não usar logo após outro post Dossiê. Não usar para tema evergreen sem notí
 
 | Slide | Composição |
 |---|---|
-| 01 — Capa | Foto em tela cheia `grayscale(0.15) brightness(0.55)`; degradê `#0A0A0A` subindo de baixo até ~60%. No topo, pílula de kicker com borda dourada. Embaixo, título DM Serif 33–35 px branco com a expressão-chave em dourado; selo em faixa dourada sólida (texto `#0A0A0A`, DM Sans 700). Rodapé de marca + "ARRASTE →". |
-| 02 — Meio a meio | Foto na metade superior (50%) com filete dourado de 3 px na divisa e degradê. Embaixo: kicker com ponto dourado, título DM Serif 24 px, 3 linhas com travessão dourado (DM Sans 12,5 px `#CCCCCC`). |
-| 03 — Dado gigante + barras | Número DM Serif 92–100 px dourado, texto 15 px, mini-gráfico de barras horizontais (destaque em dourado, demais em `#2A2A2A` com valor `#888888`), nota sob linha `#222222`. Losango dourado a 6% no canto. |
-| 04 — Dossiê | Cartão-papel `#F2F2F2`, rotação −1,5°, sombra preta, clipe dourado desenhado em CSS. Dentro: label `#A8894A` caixa alta, título DM Serif 21–22 px `#1A1A1A`, checklist com caixas de 11 px (borda `#1A1A1A`) e itens DM Sans 12 px `#1A1A1A`. Kicker e rodapé fora do cartão. |
-| 05 — Passo a passo | Título DM Serif 24 px; três passos em linha do tempo vertical: círculo de 30 px com borda dourada e número DM Serif dourado, fio dourado de 1 px ligando os círculos; título do passo DM Sans 600 13 px branco + descrição 12 px `#BBBBBB`. |
-| 06 — Alerta | Foto escura em tela cheia `brightness(0.4)` + degradê; barra dourada vertical de 3 px à esquerda do bloco; badge "!" dourado; título DM Serif 30 px; chips com "✕" dourado e borda `#2A2A2A` para o que não fazer. |
-| 07 — Payoff + CTA | Kicker com ponto, título DM Serif 30 px, frase em itálico dourado 18 px, caixa CTA dourada (padrão JA), bloco "FONTES" DM Sans 9 px `#888888`, rodapé de marca. |
+| 01 — Capa | Foto em tela cheia `grayscale(0.15) brightness(0.55)`; degradê `#0A0A0A` subindo de baixo até ~60%. No topo, pílula de kicker com borda dourada. Embaixo, título Montserrat 33–35 px branco com a expressão-chave em dourado; selo em faixa dourada sólida (texto `#0A0A0A`, Inter 700). Rodapé de marca + "ARRASTE →". |
+| 02 — Meio a meio | Foto na metade superior (50%) com filete dourado de 3 px na divisa e degradê. Embaixo: kicker com ponto dourado, título Montserrat 24 px, 3 linhas com travessão dourado (Inter 12,5 px `#CCCCCC`). |
+| 03 — Dado gigante + barras | Número Montserrat 92–100 px dourado, texto 15 px, mini-gráfico de barras horizontais (destaque em dourado, demais em `#2A2A2A` com valor `#888888`), nota sob linha `#222222`. Losango dourado a 6% no canto. |
+| 04 — Dossiê | Cartão-papel `#F2F2F2`, rotação −1,5°, sombra preta, clipe dourado desenhado em CSS. Dentro: label `#A8894A` caixa alta, título Montserrat 21–22 px `#1A1A1A`, checklist com caixas de 11 px (borda `#1A1A1A`) e itens Inter 12 px `#1A1A1A`. Kicker e rodapé fora do cartão. |
+| 05 — Passo a passo | Título Montserrat 24 px; três passos em linha do tempo vertical: círculo de 30 px com borda dourada e número Montserrat dourado, fio dourado de 1 px ligando os círculos; título do passo Inter 600 13 px branco + descrição 12 px `#BBBBBB`. |
+| 06 — Alerta | Foto escura em tela cheia `brightness(0.4)` + degradê; barra dourada vertical de 3 px à esquerda do bloco; badge "!" dourado; título Montserrat 30 px; chips com "✕" dourado e borda `#2A2A2A` para o que não fazer. |
+| 07 — Payoff + CTA | Kicker com ponto, título Montserrat 30 px, frase em itálico dourado 18 px, caixa CTA dourada (padrão JA), bloco "FONTES" Inter 9 px `#888888`, rodapé de marca. |
 
 ## Elementos fixos
 

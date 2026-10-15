@@ -20,7 +20,7 @@ Tema educativo ou institucional, sem data de validade. Uma mensagem central dese
 
 ## Cores e tipografia
 
-Somente a paleta fixa da JA (ver `../README.md`). Fundo `#0A0A0A` em todos os slides. DM Serif Display + DM Sans.
+Somente a paleta fixa da JA (ver `../README.md`). Fundo `#0A0A0A` em todos os slides. Montserrat + Inter (a versão já publicada usou DM Serif Display + DM Sans).
 
 ## Legenda
 

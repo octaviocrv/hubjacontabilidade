@@ -12,7 +12,7 @@ Carrossel "4 dúvidas": quatro temas independentes, um por página, com chamada 
 | Card | Fundo | Composição |
 |---|---|---|
 | Escuro A ("regularizar") | `#0A0A0A` + foto de prédio em P&B (`opacity .6`) | Site no topo central; título em caixa com borda dourada fina (raio 7 px), palavra-chave em dourado; botão "LEIA A LEGENDA" com borda; palavra gigante vertical na lateral direita (dourado a 20%); listras douradas no canto inferior esquerdo; assinatura JA centralizada embaixo. |
-| Claro A (pessoa) | `#F2F2F2` | Triângulos sobrepostos no canto superior esquerdo (preto 8–13% e dourado 28%); ícone chevron em círculo; título DM Sans 700 com palavra em **DM Serif itálico sobre marca-texto dourado**; subtítulo 15 px; botão; pessoa recortada à direita (sem fundo); assinatura JA à esquerda. |
+| Claro A (pessoa) | `#F2F2F2` | Triângulos sobrepostos no canto superior esquerdo (preto 8–13% e dourado 28%); ícone chevron em círculo; título Inter 700 com palavra em **Montserrat itálico sobre marca-texto dourado**; subtítulo 15 px; botão; pessoa recortada à direita (sem fundo); assinatura JA à esquerda. |
 | Claro B (animal/objeto + alerta) | `#F2F2F2` | Igual ao Claro A, com foto à direita fundida por máscara em degradê e triângulos de alerta dourados com "!" (canto superior direito e inferior esquerdo). |
 | Escuro B (pergunta) | radial `#171717` → `#0A0A0A` | Site no topo; assinatura JA centralizada acima do título; título em caixa com borda dourada (linha 1 regular, linha 2 em 700 com palavra dourada); balões "?" dourados 3D; moedas recortadas no canto inferior direito; listras no canto inferior esquerdo. |
 
@@ -29,9 +29,9 @@ Carrossel "4 dúvidas": quatro temas independentes, um por página, com chamada 
 
 ## Tipografia
 
-- Títulos: DM Sans 600/700 (aproxima a Open Sauce do modelo).
-- Palavra destacada em marca-texto: DM Serif Display itálico (assinatura editorial da JA).
-- Botões, site e assinatura: DM Sans.
+- Títulos: Inter 600/700 (aproxima a Open Sauce do modelo).
+- Palavra destacada em marca-texto: Montserrat itálico (assinatura editorial da JA).
+- Botões, site e assinatura: Inter.
 
 ## Elementos fixos JA
 

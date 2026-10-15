@@ -8,11 +8,13 @@ Esta pasta guarda:
 
 Decisão do Octavio, 14/10/2026: carrosséis de notícia podem variar composição, fundo, imagens e quantidade de slides; cores, fontes e tom da JA são fixos.
 
+> **A biblioteca cresce:** o Octavio vai colocar modelos novos em `02-marketing/carrosseis/modeloscarroseis/` a qualquer momento. Antes de criar QUALQUER carrossel, listar a pasta inteira (imagens de referência, `estilos/` e subpastas), abrir o que for novo ou ainda não analisado e considerá-lo como opção válida. Modelo novo é analisado, entra na tabela do README e passa a poder ser combinado.
+
 ## Identidade fixa (vale para todo estilo)
 
 - Cores: `#0A0A0A` (base), `#111111`/`#0D0D0D` (apoio escuro), dourado `#C8A55C` e `#A8894A`, branco `#FFFFFF`, cinzas `#CCCCCC`, `#BBBBBB`, `#888888`, `#666666` e linhas `#1E1E1E`/`#222222`/`#2A2A2A`. Nada de vermelho, azul, bege ou outra cor das referências.
 - Fundo claro só como **elemento** (cartão-papel, faixa) dentro de slide escuro, com texto `#1A1A1A`. A base do carrossel continua escura (`00-contexto/identidade-visual.md`).
-- Fontes: DM Serif Display (títulos, números grandes) e DM Sans (corpo, labels, botões).
+- Fontes: Inter, Poppins, Creato Display e Montserrat, variando principalmente o peso (decisão de 14/10/2026). DM Serif Display e DM Sans são o padrão só dos carrosséis clássicos já publicados (estilo 01). Detalhes em `00-contexto/design-system.md`.
 - Marca: logo circular `Logo.jpeg` + "JA Contabilidade" + "Contabilidade | Perícia | Estratégia" em todo slide. Nunca só `@usuario`.
 - Formato: 1080×1350 (prancheta 432×540, exportação 2,5×). Linha dourada de 4 px no topo e barra de 3 px embaixo.
 - Tom: `00-contexto/tom-de-voz.md`. Sem promessa de resultado, sem alarmismo, sem juridiquês.

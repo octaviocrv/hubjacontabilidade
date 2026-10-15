@@ -21,7 +21,7 @@ Fontes: `00-contexto/design-system.md`; `00-contexto/identidade-visual.md`; `00-
 
 ## Tipos
 
-- Site/carrossel: DM Serif Display em títulos; DM Sans no corpo.
+- Site/carrossel: Montserrat em títulos; Inter no corpo.
 - Vídeo: Creato Display Medium 52 px na legenda; sem contorno, sem palavras coloridas.
 - Não usar Montserrat em novas legendas.
 

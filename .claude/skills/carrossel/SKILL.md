@@ -17,7 +17,7 @@ Ler todos os arquivos de `00-contexto/`, com atenção a:
 - `tom-de-voz.md`
 - `briefing-rapido.md`
 
-Consultar os exemplos em `02-marketing/carrosseis/`. Não usar defaults visuais do MazyOS.
+Consultar os exemplos em `02-marketing/carrosseis/` e **listar sempre a pasta `02-marketing/carrosseis/modeloscarroseis/` inteira**: o Octavio adiciona modelos novos ao longo do tempo; abrir os novos e usá-los/combiná-los (ver `00-contexto/design-system.md`, seção "Biblioteca de modelos"), sem repetir o estilo do último post. Não usar defaults visuais do MazyOS.
 
 ## Fluxo
 
@@ -33,7 +33,7 @@ Consultar os exemplos em `02-marketing/carrosseis/`. Não usar defaults visuais 
 6. Produzir HTML-fonte ou outro formato aprovado, preservando:
    - 1080×1350, proporção 4:5;
    - três slides, salvo pedido diferente;
-   - DM Serif Display + DM Sans;
+   - fontes Inter, Poppins, Creato Display e Montserrat (variar o peso; DM Serif/DM Sans só no estilo clássico já publicado);
    - preto/quase preto, branco, cinzas e dourado `#C8A55C`;
    - linha dourada, foto tratada e rodapé fixo da JA;
    - logo e assinatura completos.

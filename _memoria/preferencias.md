@@ -12,7 +12,7 @@
 - Não inventar cor, fonte, layout, efeito ou tom.
 - Site institucional e `00-contexto/design-system.md` são fontes de verdade.
 - Preto/quase preto, branco, cinzas e dourado `#C8A55C`.
-- DM Serif Display nos títulos estáticos e DM Sans no corpo.
+- Montserrat nos títulos estáticos e Inter no corpo.
 - Vídeo usa Creato Display Medium nas legendas.
 
 ## Evitar
